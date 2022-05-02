@@ -1,0 +1,17 @@
+Livro oficial do Git:
+https://git-scm.com/book/pt-br/v2
+
+Como conectar com o repositório no Github via SSH:
+https://help.github.com/en/articles/connecting-to-github-with-ssh
+
+Guia rápido de Git:
+https://www.freecodecamp.org/news/learn-the-basics-of-git-in-under-10-minutes-da548267cc91/
+
+Instalando o it, Git setup: 
+https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Instalando-o-Git
+
+Git config:
+https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Configura%C3%A7%C3%A3o-Inicial-do-Git
+
+Do primeiro commit ao primeiro push:
+http://www.devfuria.com.br/git/tutorial-iniciando-git/
