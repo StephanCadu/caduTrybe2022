@@ -1,0 +1,50 @@
+Anotações Git e Github - Entendendo os comandos
+
+Git log: mostra em ordem todos os commits, seus códigos, o autor, data e hora da modificação 
+
+Git remove (git rm): git rm + arquivo remove um arquivo
+
+Git log --diff-filter=D --summary: diff = mostra o que há de diferente, filter = filtra, D = mostra os deletados, summary = exibe em forma de sumário 
+
+Git checkout + 4 primeiros dígitos do commit + ˜1 + arquivo = ressuscita arquivo
+Ex: git checkout 4442˜1 sobremesas.txt = ressuscita arquivo sobremesas.txt que está no commit 4442.
+
+Git ignore: serve para ignorar arquivo que vc não quer adicionar ao seu git 
+Para utilizá-lo ele precisa ser criado
+
+.gitignore (cria como arquivo oculto)
+
+Ex: car > .gitignore
+*.txt 
+
+- ignora todos os arquivos com final txt
+
+Cat >> .gitignore
+produtos.xls
+
+- ignora também o arquivo produtos.xls
+
+Cat >> .gitignore
+Relatórios/
+
+- ignora o diretório Relatórios com tudo dentro dele
+
+toptal.com/developers/gitignore
+- site para criar arquivos gitignore mais rápido
+
+Git init = inicia o git
+
+Git remote add origin + url = adiciona o vínculo entre seus gits remoto e local
+
+Git push = envia alterações do repositório local para o remoto  
+
+Git fetch = verifica se existe alguma mudança na branch do repositório remoto
+
+Git pull = verifica se há alteração mas também faz o merge entre o remoto e o local 
+
+Como criar pull request:
+
+* Quando estamos criando pelo terminal e realizamos as alterações necessárias, podemos linkar ela com o GitHub. Assim, nossa branch estará no nosso repositório remoto e disponível para implementar o Pull Request.
+
+* Quando estamos criando pelo navegador, o processo envolve mais cliques do que teclas. No GitHub, vamos ao menu de branchs para criar uma. Assim, ela já estará disponível para criar o Pull Request.
+
