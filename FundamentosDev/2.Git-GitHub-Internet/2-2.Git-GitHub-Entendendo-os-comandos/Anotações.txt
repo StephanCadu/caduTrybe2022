@@ -48,3 +48,10 @@ Como criar pull request:
 
 * Quando estamos criando pelo navegador, o processo envolve mais cliques do que teclas. No GitHub, vamos ao menu de branchs para criar uma. Assim, ela já estará disponível para criar o Pull Request.
 
+Git branch + nome da branch = cria branch 
+
+Git checkout -b + nome da branch = cria uma branch e já entra nela
+
+Code . = abre algo no vs code 
+
+Git push --set-upstream e git push -u = são exatamente a mesma coisa
