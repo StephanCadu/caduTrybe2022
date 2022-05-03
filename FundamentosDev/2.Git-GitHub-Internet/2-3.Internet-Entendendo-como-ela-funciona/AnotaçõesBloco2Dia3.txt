@@ -1,0 +1,47 @@
+Criada em 1969, a internet interliga bilhões de dispositivos em todo o mundo.
+
+Sua estrutura é dividida em Software e Hardware.
+
+Software: 
+- Gerenciam os dados e garantem que eles cheguem ao destino de forma segura.
+
+Hardwares: 
+- Gerenciam o envio das informações e fazem as ligações físicas entre os aparelhos através de cabos de fibra ótica e sinais de satélite.
+
+Pra essa ligação funcionar é preciso transformar a info que sai do provedor de internet em um sinal gerenciável (o modem faz esse papel).
+
+O roteador cria rotas, distribui a conexão e garante que os dados cheguem aos destinos.
+
+Ex: cel envia info -> pros servers e routers do serviço de telefonia, que encaminha -> pros servers e routers do serviço de mensagem (zap, insta, face, etc...) e eles enviam a msg -> para o roteador que o cel da pessoa destino está conectado.
+
+Pra essa conexão acontecer é preciso que exista uma identificação, chamada IP (Internet Protocol).
+
+Pra humanos não terem que decorar os IPs nós criamos apelidos, chamados "nomes de domínio" (ou nome do site, dãr).
+
+Ex abrindo o google:
+
+O navegador que você usa pra abrir o google chama --cliente--, que é uma aplicação conectada à internet, sua função é receber a interação do usuário e traduzi-la em uma requisição para outro computador chamado Servidor Web. 
+
+Você pode pensar no seu pc como sendo um --cliente--, que possui um endereço de IP, através desse endereço seu PC é identificado.
+
+A busca por 'www.google.com' é enviada pra um --servidor--, que tbm possui seu próprio IP.
+
+A diferença é que o --servidor-- possui um software específico que da resposta à requisição do --cliente--.
+
+O --servidor-- ARMAZENA, PROCESSA e ENTREGA páginas Web pros --clientes--. 
+
+Tipos de --servidores--: Web Servers, Database Servers, File Servers, Application Servers.
+
+Web Server, no caso do usado pra abrir o google.
+
+IP: 
+
+Todo dispositivo tem um.
+
+Tem quatro campos de dígitos separados por pontos (exemplo: 244.155.65.2), chamado de endereço lógico.
+
+Para localizar um dispositivo conectado à Internet o endereço lógico é convertido em um endereço físico por um software.
+
+Esse endereço físico faz parte do seu hardware e é conhecido por endereço de controle de acesso à mídia (MAC address).
+
+TCP/IP, ISP, DNS, Port Number, Host, HTTP, URL
