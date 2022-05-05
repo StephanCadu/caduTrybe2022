@@ -1,0 +1,44 @@
+HTML e CSS - Estruturas de páginas
+
+Sempre que for começar um documento HTML usar: <!DOCTYPE html>
+
+<html lang="pt-br"> define que a linguagem será potuguês
+ 
+<head> são as configurações da sua página
+
+Ex: <meta charset-"UTF-8"> define que os caracteres usados são os do padrão do Unicode
+
+<title> define o título 
+
+</head> fecha o head
+
+<body> define o corpo, tudo que será escrito
+
+<h1>, <h2>...<h6> definem títulos e subtítulos 
+
+<p> definem parágrafos
+
+<br> quebra de linha (podem ser repetidos para quebrar mais linhas)
+
+<strong>"texto"<strong> deixa o texto em negrito
+
+<em>"texto"<em> itálico
+
+Listas (todos precisam de fechamento):
+
+<ul> lista não ordenada
+
+<ol> lista ordenada
+
+<li> itens da lista
+--
+
+Imagens:
+
+<img> tag que define imagem
+
+src="endereço da imagem" ou "imagem.png" informa qual é a imagem 
+
+width="300px" define a largura da imagem em pixels
+
+Alt : dá descrição à imagem caso ela não apareça
