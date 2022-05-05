@@ -39,6 +39,12 @@ Imagens:
 
 src="endereço da imagem" ou "imagem.png" informa qual é a imagem 
 
-width="300px" define a largura da imagem em pixels
+width="300px" define a largura da imagem em 300 pixels
 
 Alt : dá descrição à imagem caso ela não apareça
+
+<a> cria links tanto externos quanto internos
+- href=" " define o endereço do link
+- target=" " define para onde esse lik vai (ex: target="_blank" leva o link para uma outra aba)
+- id da um nome para um texto ou palavra
+- href="#nome do id" leva esse link para o id (ou seja, um link interno)
