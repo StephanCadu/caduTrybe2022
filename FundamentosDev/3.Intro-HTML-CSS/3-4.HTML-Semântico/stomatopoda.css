@@ -1,0 +1,16 @@
+body {
+    background-color: aqua;
+}
+#corpo{
+    width: 300px;
+    float: right;
+}
+
+#soco{
+    float: right;
+}
+
+#olhos{
+    width: 300px;
+    float: left;
+}
