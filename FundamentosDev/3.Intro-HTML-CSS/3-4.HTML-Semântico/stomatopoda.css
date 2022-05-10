@@ -14,3 +14,13 @@ body {
     width: 300px;
     float: left;
 }
+main{
+    width: 80%;
+    text-align: left;
+}
+aside{
+    text-align: right;
+}
+.refs{
+    text-align: left;
+}
