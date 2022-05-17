@@ -35,5 +35,3 @@ for (let numAtual = 0; numAtual < 51; numAtual += 1){
     }
 }
 console.log(maiorPrimo);
-
-
