@@ -67,7 +67,30 @@ higgestString(test);
 
 // EXERCÍCIO 5:
 
-let foreheadando = [2, 3, 2, 5, 3, 3, 8, 2, 3];
+let foreheadando = [2, 3, 2, 5, 3, 8, 2, 3];
+
+function maisRepetido(array){
+  let numRepetido = 0;
+  let vezesRepetido = 0;
+  let maisVezes = 0;
+  let maisRep = 0;
+  
+  for (let index = 0; index < array.length; index +=1) {
+    let numAtual = array[index];
+    for (let index2 = 0; index2 < array.length; index2 +=1) {
+      if(numAtual == array[index2]){
+          vezesRepetido +=1;
+          numRepetido = array[index]
+      }        
+    } 
+    if(vezesRepetido > maisVezes){
+      maisRep = numRepetido;
+    }
+    vezesRepetido = 0;  
+  }
+  console.log(maisRep);
+}
+maisRepetido([2, 3, 2, 5, 3, 8, 8, 8]);
 
 function mostRepeated (array) {
     let repeated = 0;
@@ -89,32 +112,7 @@ function mostRepeated (array) {
     }
     console.log(array[repeatedIndex])
 }
-mostRepeated(foreheadando);
-
-
-// function maisRepetido(numeros) {
-//      let organizados;
-//      let analisado = 0;
-//      let repetido = 0;
-//      let repetidoIndex = 0;
-//      let maisRepetido = 0;
-//      let maisRepetidoIndex = 0;
-
-//      organizados = numeros.sort();
-
-//      for (let index = 0; index <= organizados.length; index += 1){
-//          analisado = organizados[index];
-//          if (analisado == organizados[index]) {
-//            repetido += 1;
-//            repetidoIndex = organizados[index];
-//         }
-//     }
-//     if (repetido > maisRepetido){
-//         maisRepetidoIndex = repetidoIndex;
-//     }
-//    console.log(maisRepetidoIndex); 
-// }
-// maisRepetido([2, 3, 2, 5, 8, 2, 3]);
+mostRepeated([2, 3, 2, 5, 3, 8, 2, 3]);
 
 // EXERCÍCIO 6:
 
@@ -127,7 +125,7 @@ function retornaSoma(valor){
 }
 retornaSoma(10);
 
-// EXERCÍCIO 7:
+// // EXERCÍCIO 7:
 
 function verifyWordEnd (word, end){
     let invertWord = word.split('').reverse().join('');
