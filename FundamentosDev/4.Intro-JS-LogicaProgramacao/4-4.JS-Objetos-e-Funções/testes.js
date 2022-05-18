@@ -67,5 +67,9 @@ for (let key in carro) {
 }
 
 
-
-
+function calc(a, b, oper) {
+  if (oper === '+'){
+    return a + b;
+  }
+}
+calc(4, 5, '+');
