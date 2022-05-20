@@ -74,5 +74,32 @@ for (let ind = 3; ind > 0; ind -= 1) {
     document.querySelector('.main-content').appendChild(aga3);
 }
 
+// ---------- EXERCÍCIOS DE ALTERAÇÃO E REMOÇÃO -----------
+
+// EXERCÍCIO 1
+
+aga1.className = 'title';
+
+// EXERCÍCIO 2
+
+
+
+// EXERCÍCIO 3
+
+
+
+// EXERCÍCIO 4
+
+
+
+// EXERCÍCIO 5
+
+
+
+// EXERCÍCIO 6
+
+
+
+
 
 
