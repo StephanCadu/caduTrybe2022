@@ -66,5 +66,13 @@ console.log(ul);
 
 sectionRight.appendChild(ul);
 
+// EXERCÍCIO 9
+
+for (let ind = 3; ind > 0; ind -= 1) {
+    let aga3 = document.createElement('h3');
+
+    document.querySelector('.main-content').appendChild(aga3);
+}
+
 
 
