@@ -1,4 +1,4 @@
- //   EXERCÍCIO 1
+// EXERCÍCIO 1
 
 let corpo = document.querySelector('body');
 
@@ -13,3 +13,15 @@ let main = document.createElement('main');
 main.className = 'main-content';
 
 corpo.appendChild(main);
+
+// EXERCÍCIO 3
+
+let section = document.createElement('section');
+section.className = 'center-content';
+
+main.appendChild(section);
+
+
+
+
+
