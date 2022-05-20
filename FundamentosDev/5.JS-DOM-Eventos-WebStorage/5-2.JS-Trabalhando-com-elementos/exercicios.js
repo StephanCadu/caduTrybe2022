@@ -35,5 +35,11 @@ sectionLeft.className = 'left-content';
 
 main.appendChild(sectionLeft);
 
+// EXERCÍCIO 6
+
+let sectionRight = document.createElement('section');
+sectionRight.className = 'right-content';
+
+main.appendChild(sectionRight);
 
 
