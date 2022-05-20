@@ -21,7 +21,12 @@ section.className = 'center-content';
 
 main.appendChild(section);
 
+// EXERCÍCIO 4
 
+let p = document.createElement('p');
+p.innerText = 'QUALQUER COISA'
+
+section.appendChild(p);
 
 
 
