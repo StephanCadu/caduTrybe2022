@@ -28,5 +28,12 @@ p.innerText = 'QUALQUER COISA'
 
 section.appendChild(p);
 
+// EXERCÍCIO 5
+
+let sectionLeft = document.createElement('section');
+sectionLeft.className = 'left-content';
+
+main.appendChild(sectionLeft);
+
 
 
