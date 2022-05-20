@@ -48,5 +48,23 @@ let img = document.createElement('img');
 img.className = 'small-image';
 img.src = 'https://picsum.photos/200';
 
-section.appendChild(img);
+sectionLeft.appendChild(img);
+
+// EXERCÍCIO 8
+
+let items = ['um', 'dois','três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+
+let ul = document.createElement('ul');
+
+
+for (let item in items) {
+  let li = document.createElement('li');
+  li.innerText = items[item];
+  ul.appendChild(li);  
+}
+console.log(ul);
+
+sectionRight.appendChild(ul);
+
+
 
