@@ -42,4 +42,11 @@ sectionRight.className = 'right-content';
 
 main.appendChild(sectionRight);
 
+// EXERCÍCIO 7
+
+let img = document.createElement('img');
+img.className = 'small-image';
+img.src = 'https://picsum.photos/200';
+
+section.appendChild(img);
 
