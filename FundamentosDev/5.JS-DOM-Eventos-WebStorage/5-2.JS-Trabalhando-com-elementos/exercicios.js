@@ -101,6 +101,9 @@ document.querySelector('.center-content').style.backgroundColor = 'violet';
 
 // EXERCÍCIO 6
 
+for (let i = 0; i < 2; i +=1){
+ul.lastChild.remove();
+}
 
 
 
