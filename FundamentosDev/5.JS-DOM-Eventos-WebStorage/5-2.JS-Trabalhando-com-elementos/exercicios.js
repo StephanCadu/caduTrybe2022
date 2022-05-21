@@ -70,7 +70,7 @@ sectionRight.appendChild(ul);
 
 for (let ind = 3; ind > 0; ind -= 1) {
     let aga3 = document.createElement('h3');
-
+    aga3.innerText = 'eu existo';
     document.querySelector('.main-content').appendChild(aga3);
 }
 
@@ -86,18 +86,17 @@ aga1.className = 'title';
 
 // EXERCÍCIO 3
 
-
+document.querySelector('.main-content').removeChild(sectionLeft);
 
 // EXERCÍCIO 4
 
-
+document.querySelector('.right-content').style.marginRight = '20%';
 
 // EXERCÍCIO 5
 
-
+document.querySelector('.center-content').style.backgroundColor = 'violet';
 
 // EXERCÍCIO 6
-
 
 
 
