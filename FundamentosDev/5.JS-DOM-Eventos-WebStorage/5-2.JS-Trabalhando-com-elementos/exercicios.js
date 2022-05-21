@@ -82,7 +82,10 @@ aga1.className = 'title';
 
 // EXERCÍCIO 2
 
-
+let agas3 = document.getElementsByTagName('h3');
+for (let index = 0; index < 3; index +=1) {
+  agas3[index].className = 'description';
+}
 
 // EXERCÍCIO 3
 
