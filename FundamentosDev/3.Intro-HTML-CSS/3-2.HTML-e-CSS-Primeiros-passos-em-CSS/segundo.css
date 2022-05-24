@@ -1,0 +1,36 @@
+h1 {
+    width: 65px;
+    color: orange;
+    font-family: sans-serif;
+}
+.mudacor {
+    background-color: purple;
+    color: white;
+    line-height: 60px;
+}
+
+p {
+    font-weight: 600;
+    font-size: 3em;
+}
+body {
+    font-size: 16px;
+}    
+#amarelo {
+    font-style: oblique;
+    background-color: yellow;
+}
+
+#vermelho {
+    background-color: red;
+}
+
+#marrom {
+    background-color: brown;
+}
+
+ul {
+    line-height: 50px;
+    text-align: right;
+    text-decoration: underline;
+}
