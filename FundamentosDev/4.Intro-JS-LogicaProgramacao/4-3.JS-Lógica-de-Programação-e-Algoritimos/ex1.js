@@ -1,9 +1,11 @@
+
 // 1- O fatorial é a multiplicação de um número natural pelos seus antecessores, exceto o zero.
 
 // let num = 6;
 // let fatorial = num;
 
-
+// O fatorial é representado pelo sinal !
+// ! = 4 x 3 x 2 x 1 = 24
 
 function fatora(fatorial){
     if (fatorial === 0 || fatorial === 1){
@@ -21,5 +23,6 @@ function fatora(fatorial){
     return fatorial
 }
 console.log(fatora(4));
+
 
 
