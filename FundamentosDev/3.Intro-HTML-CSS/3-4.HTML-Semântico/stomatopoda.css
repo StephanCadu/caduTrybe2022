@@ -1,0 +1,26 @@
+body {
+    background-color: aqua;
+}
+#corpo{
+    width: 300px;
+    float: right;
+}
+
+#soco{
+    float: right;
+}
+
+#olhos{
+    width: 300px;
+    float: left;
+}
+main{
+    width: 80%;
+    text-align: left;
+}
+aside{
+    text-align: right;
+}
+.refs{
+    text-align: left;
+}
