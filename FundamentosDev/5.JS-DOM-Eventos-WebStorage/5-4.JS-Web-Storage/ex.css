@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  top: 0;  
+}
+
+body {
+  background-color: rgb(231, 76, 10);
+  font-family: 'Permanent Marker', cursive;  
+}
+
+.center {
+  text-align: center;  
+}
+
+#head {
+  text-align: center;
+  font-size: 30px;
+  border-top: 10px;
+  height: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 3px; 
+}
+
+.nave {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  background-color: purple;
+  border: 1px solid black;
+}
+
+.div1 {
+  border: 3px solid black;
+}
