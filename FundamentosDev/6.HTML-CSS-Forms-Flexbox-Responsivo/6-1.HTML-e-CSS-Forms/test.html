@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>Treino de Forms</header>
+    <form action="" method="get">
+      <input type="email" id="emeio" name="email" placeholder="Digite deu email" required autocomplete="off" autofocus>
+      <br>
+      <br>
+      <input type="password" id="pass" name="password" placeholder="Digite sua senha" required>
+      <br>
+      <br>
+      <label for="check">Lembre-me
+        <input type="checkbox" id="check" namer="checkbox">
+      </label>
+      <br>
+      <br>
+      <label for="">
+          <select name="estado" id="select">
+              <option value="sp">SP</option>
+              <option value="ba">BA</option>
+              <option value="rj" selected>RJ</option>
+              <option value="rs">RS</option>
+          </select>
+      </label>
+        <br>
+        <br>
+        <p>Selecione sua foto</p>
+        <input type="file" name="foto" id="picture">
+        <br>
+        <br>
+        <label for="um">
+            <input type="radio" id="um" name="manobras" value="flip">Flip
+        </label>
+        <label for="dois">
+            <input type="radio" id="dois" name="manobras" value="kick">360 Flip
+        </label>
+        <label for="tres">
+            <input type="radio" id="tres" name="manobras" value="hard">Hardflip
+        </label>
+        <label for="quatro">
+            <input type="radio" id="quatro" name="manobras" value="heel">Heelflip
+        </label>
+        <br>
+        <br>
+        <p>escreva o motivo dessa decisão</p>
+        <textarea name="sobre" id="textar" cols="25" rows="3"></textarea>
+        <br>
+        <br>
+        <button id="btn">Entrar</button>
+    </form>
+</body>
+</html>
