@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="newex.css" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="bg-dark text-white">
+    <header id="head">
+      <h1 class="display-2 text-center p-5">Wellcome to Trybetrip</h1>
+    </header>
+    <form action="" method="get" id="formi" class="container text-center">
+      <h3 class="display-6 text-center">Type your info</h3>
+      <div id="basics pb-5">
+        <label for="nome-completo"
+          >Name:
+          <input
+            class="form-control-plaintext p-3"
+            type="text"
+            id="nome-completo"
+            name="nome"
+            placeholder="Type your name here"
+            minlength="10"
+            maxlength="40"
+            required
+          />
+        </label>
+        <label for="imeio" id="emeio"
+          >E-mail:
+          <input
+            class="form-control-plaintext p-3"
+            type="email"
+            name="email"
+            id="imeio"
+            placeholder="Type your email here"
+            minlength="10"
+            maxlength="50"
+            required
+          />
+        </label>
+      </div>
+      <div id="dests" class="container mb-3 p-3 justify-content-around">
+        <legend>Preferred destination</legend>
+        <label for="city" class="form-check-label">
+          <input type="radio" name="destino" id="city" class="form-check-input"/>
+          City
+        </label>
+        <label for="camp">
+          <input type="radio" name="destino" id="camp" class="form-check-input"/>
+          Country side
+        </label>
+        <label for="praia">
+          <input type="radio" name="destino" id="praia" class="form-check-input"/>
+          Beach
+        </label>
+        <label for="montanha">
+          <input type="radio" name="destino" id="montanha" class="form-check-input"/>
+          Mountains
+        </label>
+      </div>
+
+      <div id="textoarea">
+        <label for="areatxt" id="labelText">
+          <p>Why do you deserve being the winner of the Trybetrip contest?</p>
+          <textarea
+            class="form-control"
+            name="text"
+            id="areatxt"
+            cols="30"
+            rows="10"
+            maxlength="500"
+            placeholder="Write about 100 words"
+          ></textarea>
+        </label>
+      </div>
+
+      <div id="datas">
+        <label for="date">
+          When is the best date for your trip?
+          <input type="date" name="data" id="date" />
+        </label>
+      </div>
+
+      <div id="check1">
+        <label for="oportunities">
+          Would you like to receive other incredible opportunities offered by
+          Trybe?
+          <input type="checkbox" name="oport" id="oportunities" />
+        </label>
+      </div>
+      <div id="check2">
+        <label for="image">
+          I agree my images can be used in further contests divulgation
+          <input type="checkbox" name="oport" id="image" required />
+        </label>
+      </div>
+
+      <div id="botons">
+        <button type="submit" id="submeter" class="btn btn-primary">Submit</button>
+        <button type="reset" class="btn btn-danger">Reset</button>
+      </div>
+    </form>
+    <script src="newex.js"></script>
+  </body>
+</html>
