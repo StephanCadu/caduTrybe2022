@@ -1,0 +1,121 @@
+/* * {
+    margin: 0;
+    top: 0;
+/* } */
+
+/* body { */
+    /* background-image: url(trip.jpeg);
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: large;
+    color: black; */
+/* } */
+
+/* 
+#head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    font-family: 'Great Vibes', cursive;
+    font-size: 40px;
+    color: bisque;
+}
+
+#formi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#campo-preenchimento {
+    width: 80%;
+}
+
+#dests {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+    height: 80px;
+    margin-top: 50px;
+}
+
+#basics {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 30px;
+}
+
+#emeio {
+    margin-left: 50px;
+}
+
+#textoarea {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 250px;
+    margin-top: 50px;
+}
+
+#labelText {
+    height: 250px;
+    color: black;
+}
+
+#areatxt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto; 
+    margin-top: 20px;
+}
+
+p {
+    border-radius: 5px;
+    height: 30px;
+    padding-top: 10px;
+}
+
+#datas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto; 
+    margin-top: 10px;
+}
+
+#check1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto; 
+    margin-top: 20px;
+}
+
+#check2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto; 
+    margin-top: 20px;
+}
+
+#botons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto; 
+    margin-top: 20px; 
+}
+
+#nome-completo, #imeio {
+    border-radius: 25px;
+    height: 25px;
+    width: 200px;
+    padding-left: 10px;
+    background-color: rgb(149, 155, 160);
+    transition: 1.5s;
+}  */
