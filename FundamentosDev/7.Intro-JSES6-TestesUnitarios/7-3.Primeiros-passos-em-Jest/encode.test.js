@@ -2,7 +2,7 @@ const encode = require('./encode');
 
 describe('encode function', () => {
   it('Teste se encode e decode são funções', () => {
-    expect(encode('a')).toBeDefined();
+    expect(typeof encode).toBe('function');
   })
   it('Para a função encode teste se as vogais a, e, i, o, u são convertidas em 1, 2, 3, 4 e 5, respectivamente', () => {
     expect(encode('lacaio rueiro')).toBe('l1c134 r523r4')
