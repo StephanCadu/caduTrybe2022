@@ -31,15 +31,14 @@ const randomBetween = (min, max) => {
 const dragonDamage = () => {
   return randomBetween(15, dragon.strength);
 }
-console.log(dragonDamage());
+// console.log(dragonDamage());
 
 // Exercício 2
 
 const warriorDamage = () => {
   return randomBetween(warrior.strength, warrior.strength * warrior.weaponDmg);
 }
-
-console.log(warriorDamage());
+// console.log(warriorDamage());
 
 // Exercício 3
 
@@ -51,14 +50,53 @@ const mageDamage = () => {
   mageStats.damage = randomBetween(mage.intelligence, mage.intelligence * 2);
   
   if (mage.mana < 15) { 
-    mageStats.damage = 'Não possui mana suficiente'
+    mageStats.damage = 'Not enough mana...'
     mageStats.mana = mage.mana;
   } else {
     mageStats.mana = mage.mana - 15;
     mage.mana = mage.mana - 15;
   };
   
-  return mageStats
+  return mageStats.damage
+}
+// console.log(mageDamage());
+
+// Parte II
+
+// Exercício 1
+
+const warriorAtk = (func) => {
+  warrior.damage = func();
+  dragon.healthPoints -= warrior.damage;
+  return `Warrior attacks Dragon with ${warrior.damage}DP`
 }
 
-console.log(mageDamage());
+// Exercício 2
+
+const mageAtk = (func) => {
+  mage.damage = func();
+  dragon.healthPoints -= mage.damage;
+  return `Mage attacks Dragon with ${mage.damage}DP`
+}
+
+// Exercício 3
+
+const dragonAtk = (func) => {
+  dragon.damage = func();
+  warrior.healthPoints -= dragon.damage;
+  mage.healthPoints -= dragon.damage;
+  return `Dragon attacks Warrior and Mage with ${dragon.damage}DP each`
+}
+
+// Exercício 4
+
+const turnStats = (obj) => obj;
+
+const gameActions = {
+  // Crie as HOFs neste objeto.
+  warriorTurn: warriorAtk(warriorDamage),
+  mageTurn: mageAtk(mageDamage),
+  dragonTurn: dragonAtk(dragonDamage),
+  turnResult: turnStats(battleMembers), 
+};
+console.log(gameActions);
