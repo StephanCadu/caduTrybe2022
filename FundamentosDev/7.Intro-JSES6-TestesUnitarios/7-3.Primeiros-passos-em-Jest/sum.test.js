@@ -8,6 +8,6 @@ describe('Sum function', () => {
     expect(sum(0, 0)).toBe(0)
   });
   it('Throw error when tries sum(0, `5`)', () => {
-    expect(sum(0, '5')).toBe('parameters must be numbers');
+    expect(() => {sum(0, '5')}).toThrow();
   });
 });  
