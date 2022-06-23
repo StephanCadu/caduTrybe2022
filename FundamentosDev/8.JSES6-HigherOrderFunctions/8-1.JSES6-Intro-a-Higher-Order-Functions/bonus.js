@@ -24,20 +24,15 @@ const mage = {
 
 // Exercício 1
 
-const randomBetween = (min, max) => {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
+const randomBetween = (min, max) => Math.round(Math.random() * (max - min)) + min;
 
-const dragonDamage = () => {
-  return randomBetween(15, dragon.strength);
-}
+const dragonDamage = () => randomBetween(15, dragon.strength);
+
 // console.log(dragonDamage());
 
 // Exercício 2
 
-const warriorDamage = () => {
-  return randomBetween(warrior.strength, warrior.strength * warrior.weaponDmg);
-}
+const warriorDamage = () => randomBetween(warrior.strength, warrior.strength * warrior.weaponDmg);
 // console.log(warriorDamage());
 
 // Exercício 3
@@ -100,3 +95,5 @@ const gameActions = {
   turnResult: turnStats(battleMembers), 
 };
 console.log(gameActions);
+
+
