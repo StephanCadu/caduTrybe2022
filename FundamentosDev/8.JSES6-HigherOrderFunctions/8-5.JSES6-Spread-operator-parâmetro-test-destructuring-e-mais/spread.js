@@ -1,5 +1,3 @@
-// finalmente chegada a hora de aprender:
-// parâmetro rest;
 // object destructuring;
 // array destructuring;
 // default destructuring;
