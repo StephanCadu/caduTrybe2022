@@ -73,6 +73,6 @@ const user = {
 const worker = {...user, ...jobInfos}
 
 // 2
-const { person, old, nationality, profession, squad, squadInitials} = worker;
+const { person, old, nationality, profession, squad, squadInitials } = worker;
 
 console.log(`Hi, my name is ${person}, I'm ${old} years old and I'm ${nationality}. I work as a ${profession} and my squad is ${squadInitials}-${squad}`);
