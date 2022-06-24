@@ -1,4 +1,3 @@
-// abbreviation object literal;
 // default params.
 
 // spread operator:
