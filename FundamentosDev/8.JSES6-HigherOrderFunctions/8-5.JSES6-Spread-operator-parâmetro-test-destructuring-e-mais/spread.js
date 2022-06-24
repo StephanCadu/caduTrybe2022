@@ -1,4 +1,3 @@
-// object destructuring;
 // array destructuring;
 // default destructuring;
 // abbreviation object literal;
