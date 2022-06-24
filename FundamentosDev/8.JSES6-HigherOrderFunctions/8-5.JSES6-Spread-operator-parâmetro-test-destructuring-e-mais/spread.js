@@ -1,4 +1,3 @@
-// default destructuring;
 // abbreviation object literal;
 // default params.
 
