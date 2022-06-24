@@ -1,6 +1,5 @@
-// default params.
-
 // spread operator:
+
 const numbers = [1, 2, 3];
 const numbers2 = [5, 6, 7];
 
