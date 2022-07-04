@@ -11,7 +11,7 @@ console.log(authorWith3DotsOnName(books));
 // ref que ajudou na resolução acima: https://pt.stackoverflow.com/questions/486918/como-contar-ocorr%C3%AAncias-de-uma-letra-em-uma-frase#:~:text=%C3%89%20poss%C3%ADvel%20utilizar%20o%20m%C3%A9todo,String%20ou%20uma%20express%C3%A3o%20regular.
 
 // resolução alternativa usando regex
-const dotsName3 = (arr) => arr.find((obj) => /\..*\..*\./.exec(obj.author.name)).author.name
+const dotsName3 = (arr) => arr.find((obj) => /\..*\..*\./.exec(obj.author.name)).name
 
 console.log(dotsName3(books));
 
