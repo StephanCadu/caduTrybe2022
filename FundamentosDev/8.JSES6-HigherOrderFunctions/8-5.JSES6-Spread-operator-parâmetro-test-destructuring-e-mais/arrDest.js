@@ -31,7 +31,6 @@ console.log(comida, animal, bebida);
 // 3
 let numerosPares = [1, 3, 5, 6, 8, 10, 12];
 
-const [a, b, c, d, e, f, g] = numerosPares;
-numerosPares = [d, e, f, g];
+const [, , , ...pares] = numerosPares;
 
-console.log(numerosPares);
+console.log(pares);
