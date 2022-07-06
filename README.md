@@ -69,13 +69,13 @@ Contém todas as atividades desenvolvidas por __[mim](https://www.linkedin.com/i
 - [X] 8.5 - JavaScript ES6 - spread operator, parâmetro rest, destructuring e mais
 - [X] 8.6 - Projeto - Zoo functions
 
+## Desenvolvimento Front-end :hourglass_flowing_sand:
+
 ##### Bloco 9: [JavaScript e Testes Assíncronos]()
 - [ ] 9.1 - JavaScript Assíncrono e Callbacks
 - [ ] 9.2 - JavaScript Assíncrono - Fetch API e async/await
 - [ ] 9.3 - Jest - Testes Assíncronos
 - [ ] 9.4 - Projeto - Carrinho de Compras
-
-## Desenvolvimento Front-end :hourglass_flowing_sand:
 
 ##### Bloco 10: [Introdução à React]()
 - [ ] 10.1 - Introdução - Front-end
