@@ -33,13 +33,7 @@ function getPokemonDetails(filter, callback) {
   }, 2000);
 }
 
-getPokemonDetails((coisa) => coisa.name === 'errou', (erro, msg) => {
-  if (erro) {
-    console.log(erro);
-  } else {
-    console.log(msg);
-  }
-});
+getPokemonDetails((coisa) => coisa.name === 'Charmander', (erro, msg) => (erro ? console.log(erro) : console.log(msg)));
 
 module.exports = {
   getPokemonDetails,
