@@ -1,14 +1,14 @@
-// const { crypoReceive } = import('./cryptoReceive');
+import cryptoReceive from './cryptoReceive';
 
-const cryptoReceive = async () => {
-  const CRYPTO_API_URL = 'https://api.coincap.io/v2/assets';
+// const cryptoReceive = async () => {
+//   const CRYPTO_API_URL = 'https://api.coincap.io/v2/assets';
 
-  const myCrypto = await fetch(CRYPTO_API_URL)
-  .then(response => response.json())
-  .then(({ data })=> data)
-  .catch(error => error.type);
-  return myCrypto;
-}
+//   const myCrypto = await fetch(CRYPTO_API_URL)
+//   .then(response => response.json())
+//   .then(({ data })=> data)
+//   .catch(error => error.type);
+//   return myCrypto;
+// }
 
 const changeValue = async () => {
   const CURRENCY_API_URL = 'https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/eur.json';
@@ -33,7 +33,7 @@ const cryptoCurrency = async () => {
   valuesList.innerHTML = '';
 
   // declara a lista com as informações das moedas
-  const myReceive = await cryptoReceive()
+  const myReceive = await cryptoReceive();
 
   // cria as lis a partir da lista de moedas
   myReceive.filter((elm, ind) => ind < 10).forEach(async ({ name, symbol, priceUsd })=> {
@@ -61,7 +61,7 @@ const cryptoCurrency = async () => {
     const symbolValue = symbolInput.value;
 
     valores.forEach((valor) => {
-      valor.innerHTML = (valor.innerHTML * myChange[symbolValue].toFixed(2)).toFixed(2);
+      valor.innerHTML = (valor.innerHTML * myChange[symbolValue]).toFixed(2);
     })
     
     // sugestão do Douglas
@@ -69,7 +69,7 @@ const cryptoCurrency = async () => {
   } 
 }
 
-window.onload = () => cryptoCurrency();
+window.onload = cryptoCurrency;
 
 const changeBtn = document.getElementById('changeBtn');
 
