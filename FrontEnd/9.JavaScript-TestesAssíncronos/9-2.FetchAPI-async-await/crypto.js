@@ -1,5 +1,5 @@
-import cryptoReceive from './cryptoReceive';
-
+import cryptoReceive from './cryptoReceive.js';
+import changeValue from './cryptoChange.js';
 // const cryptoReceive = async () => {
 //   const CRYPTO_API_URL = 'https://api.coincap.io/v2/assets';
 
@@ -10,15 +10,15 @@ import cryptoReceive from './cryptoReceive';
 //   return myCrypto;
 // }
 
-const changeValue = async () => {
-  const CURRENCY_API_URL = 'https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/eur.json';
+// const changeValue = async () => {
+//   const CURRENCY_API_URL = 'https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/eur.json';
 
-  const myChange = await fetch(CURRENCY_API_URL)
-  .then(response => response.json())
-  .then(({ eur }) => eur)
-  .catch(error => error.type);
-  return myChange;
-};
+//   const myChange = await fetch(CURRENCY_API_URL)
+//   .then(response => response.json())
+//   .then(({ eur }) => eur)
+//   .catch(error => error.type);
+//   return myChange;
+// };
 
 const cryptoCurrency = async () => {
 
