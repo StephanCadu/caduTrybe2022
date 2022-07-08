@@ -1,0 +1,15 @@
+
+Return NÃO lida com código ASSÍNCRONO!
+Return é código SÍNCRONO!
+
+O fetch e os then retornam Promisses
+
+Se a minha função usa async await, eu tenho que falar isso na assinatura dela.
+Como?
+
+const qualquerCoisa = async () => {}
+async function qualquerCoisa() {}
+
+Quando usamos async await, só podemos tratar um erro com try catch, já usando then catch, isso não é necessário
+
+Promisse.all recebe um array de promessas, e retorna outra premisse
