@@ -21,6 +21,12 @@ Greeting.propTypes = {
   lastName: PropTypes.string.isRequired,
 };
 
+// Também é possível adicionar porps como default:
+Greeting.defaultProps = {
+  name: 'Irineu',
+  lastName: 'Você não sabe nem eu',
+}
+
 export default Greeting;
 
 // PRINCIPAIS VALIDADORES DE PORPS:
