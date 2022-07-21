@@ -3,8 +3,18 @@ import Pokemon from './Pokemon';
 
 class Pokedex extends React.Component {
   render() {
-    const { pokemons, value, input, sortValue } = this.props
+
+    const { 
+      pokemons,
+      value,
+      input,
+      sortValue,
+      favoriteClick,
+      favorites,
+    } = this.props
+
     const myRegex = new RegExp(`${input}.*`, 'g')
+
     return (
       <section className='pokeSection'>
         {pokemons.filter((bicho) => value === 'All' || bicho.type === value)
@@ -23,7 +33,14 @@ class Pokedex extends React.Component {
                 return 0;
             }
           })
-          .map((poke) => <Pokemon pokemon={poke} key={poke.id}/>)}
+          .map((poke) => <Pokemon
+            pokemon={poke}
+            key={poke.id}
+            favoriteClick={favoriteClick}
+          />)}
+
+          {/* .filter((pkm) => favorites.length < 1 ||favorites.includes(pkm.id)) */}
+
       </section>
     );
   }

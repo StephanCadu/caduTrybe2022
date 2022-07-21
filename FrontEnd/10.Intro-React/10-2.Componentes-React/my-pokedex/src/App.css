@@ -10,6 +10,8 @@ body {
 }
 
 /* ÍCONE POKEBALL */
+
+/* section */
 #iconSection {
   position: absolute;
   display: flex;
@@ -22,6 +24,7 @@ body {
   width: 10px;
 }
 
+/* image */
 #iconDiv {
   background-image: url('./images/iconBall.png');
   position: absolute;
@@ -116,11 +119,19 @@ body {
   transition: 0.3s;
 }
 
+/* img */
 .pokeImage {
   height: 150px;
   width: 150px;
   object-fit: cover;
 }
+
+/* p (pokemon weight) */
+.weight {
+  font-weight: 600;
+  text-shadow: 1px 1px 1px rgb(123, 123, 123);
+}
+
 
 /* title 1 https://archives.bulbagarden.net/media/upload/thumb/4/4b/Pok%C3%A9dex_logo.png/250px-Pok%C3%A9dex_logo.png */
 
@@ -147,7 +158,9 @@ body {
 /* pokeball image: https://ae01.alicdn.com/kf/H7b0d3b8943c7497e97241328e770e9cah/Tapete-de-pokemon-go-pokeball-divertido-de-alta-qualidade-redondo-fofo-rea-para-sala-de-estar.jpg_Q90.jpg_.webp */
 
 /* MINI POKEBALL */
-.ballAbsolute {
+
+/* POKEBALL UNSELECTED */
+.ballUnselected {
   background-image: url('./images/pokeBallUnselected.png');
   height: 15px;
   width: 15px;
@@ -158,6 +171,18 @@ body {
   margin-left: 0;
   /* DANIEL LANÇOU A BRABA */
   /* mix-blend-mode: multiply; */
+}
+
+/* POKEBALL SELECTED */
+.ballSelected {
+  background-image: url('./images/pokeBallCorrected.png');
+  height: 15px;
+  width: 15px;
+  background-size: contain;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  margin-left: 0;
 }
 
 /* FORM DIV */
@@ -179,6 +204,25 @@ body {
 }
 
 /* SELECT */
+
+/* section */
+#selectSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* label */
+#selectLabel {
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 3%;
+  margin-top: 30px;
+}
+
+/* select */
 #pokeSelect {
   margin-top: 10px;
   width: 100px;
@@ -192,28 +236,25 @@ body {
   cursor: pointer;
 }
 
-#selectLabel {
-  padding-left: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  border-radius: 3%;
-  margin-top: 30px;
-}
-
 /* SEARCH POKEMON */
-#searchDiv {
+
+/* section */
+#searchSection {
   display: flex;
   justify-content: space-around;
   margin-top: 15px;
   margin-bottom: 20px;
+  flex-direction: column;
+  align-items: center;
 }
 
+/* input */
 #searchInput {
   height: 18px;
   width: 150px;
   text-align: center;
-  margin-right: 1px;
   border-radius: 20px;
+  margin: 20px;
 }
 
 #searchInput:hover {
@@ -221,6 +262,8 @@ body {
 }
 
 /* SORTEAR POKEMONS */
+
+/* section */
 #sortContainer {
   display: flex;
   align-items: center;
@@ -229,6 +272,12 @@ body {
   margin-top: 50px;
 }
 
+/* label */
+#sortLabel {
+  margin-bottom: 15px;
+}
+
+/* button */
 .sortBtn {
   margin: 3px;
   width: 100px;
@@ -242,78 +291,146 @@ body {
   cursor: pointer;
 }
 
-#sortLabel {
-  margin-bottom: 15px;
-}
-
 /* TYPE COLORS ---- start */
 .grass {
   background-color: #78C850;
+  padding: 1px;
+  border-radius: 3px;
+  font-weight: 500;
+  color: white;
 }
 
 .fire {
   background-color: #F08030;
+  padding: 1px;
+  border-radius: 3px;
+  font-weight: 500;
+  color: white;
+  text-shadow: 1px 1px 1px black;
 }
 
 .water {
   background-color: #6890F0;
+  padding: 1px;
+  border-radius: 3px;
+  font-weight: 500;
+  color: white;
+  text-shadow: 1px 1px 1px black;
 }
 
 .bug {
   background-color: #A8B820;
+  padding: 1px;
+  border-radius: 3px;
+  font-weight: 500;
+  color: white;
+  text-shadow: 1px 1px 1px black;
 }
 
 .normal {
   background-color: #A8A878;
+  padding: 1px;
+  border-radius: 3px;
+  font-weight: 500;
+  color: white;
+  text-shadow: 1px 1px 1px black;
 }
 
 .poison {
   background-color: #A040A0;
+  padding: 1px;
+  border-radius: 3px;
+  font-weight: 500;
+  color: white;
+  text-shadow: 1px 1px 1px black;
 }
 
 
 .electric {
   background-color: #F8D030;
+  padding: 1px;
+  border-radius: 3px;
+  font-weight: 500;
+  color: white;
+  text-shadow: 1px 1px 1px black;
 }
 
 
 .ground {
   background-color: #E0C068;
+  padding: 1px;
+  border-radius: 3px;
+  font-weight: 500;
+  color: white;
+  text-shadow: 1px 1px 1px black;
 }
 
 
 .fairy {
   background-color: #EE99AC;
+  padding: 1px;
+  border-radius: 3px;
+  font-weight: 500;
+  color: white;
+  text-shadow: 1px 1px 1px black;
 }
 
 
 .fighting {
   background-color: #C03028;
+  padding: 1px;
+  border-radius: 3px;
+  font-weight: 500;
+  color: white;
+  text-shadow: 1px 1px 1px black;
 }
 
 
 .psychic {
   background-color: #F85888;
+  padding: 1px;
+  border-radius: 3px;
+  font-weight: 500;
+  color: white;
+  text-shadow: 1px 1px 1px black;
 }
 
 
 .rock {
   background-color: #B8A038;
+  padding: 1px;
+  border-radius: 3px;
+  font-weight: 500;
+  color: white;
 }
 
 
 .ghost {
   background-color: #705898;
+  padding: 1px;
+  border-radius: 3px;
+  font-weight: 500;
+  color: white;
+  text-shadow: 1px 1px 1px black;
 }
 
 
 .ice {
   background-color: #98D8D8;
+  padding: 1px;
+  border-radius: 3px;
+  font-weight: 500;
+  color: white;
 }
 
 
 .dragon {
   background-color: #7038F8;
+  padding: 1px;
+  border-radius: 3px;
+  font-weight: 500;
+  color: white;
+  text-shadow: 1px 1px 1px black;
 }
 /* TYPE COLORS ---- end */
 

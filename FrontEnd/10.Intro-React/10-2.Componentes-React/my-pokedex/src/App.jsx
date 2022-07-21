@@ -1,7 +1,7 @@
 import './App.css';
-import Pokedex from './Pokedex';
-import pokemons from './data';
-import Pokeform from './FormComponents/Pokeform';
+import Pokedex from './components/Pokedex';
+import pokemons from './data/data';
+import Pokeform from './formComponents/Pokeform';
 import React from 'react';
 
 class App extends React.Component {
@@ -12,10 +12,13 @@ class App extends React.Component {
       value: 'All', 
       input: '',
       sortValue: '',
+      favorites: [],
     };
 
     this.handleChange = this.handleChange.bind(this);
     this.handleClick = this.handleClick.bind(this);
+    this.favoriteClick = this.favoriteClick.bind(this);
+    this.getIndex = this.getIndex.bind(this);
   }
 
   handleChange({ target: { name, value } }) {  
@@ -29,8 +32,47 @@ class App extends React.Component {
     this.setState({ sortValue: event.target.value, })
   }
 
+  getIndex(parent) {
+    return this.state.favorites
+    .indexOf(parent.innerText
+    .replace(/#/g, ''));
+  }
+
+  favoriteClick({ target }) {
+    if(target.className === 'ballUnselected') {
+
+      target.className = 'ballSelected'
+
+      this.setState({
+        favorites: [...this.state.favorites,
+          target.parentNode.innerText.replace(/#/g, '')],
+      })
+
+      console.log('entrou');
+
+    } else {
+
+      target.className = 'ballUnselected'
+
+      const idIndex = this.state.favorites
+        .indexOf(target.parentNode.innerText
+        .replace(/#/g, ''));
+      
+      console.log(idIndex);
+
+      this.setState({
+        favorites: [...this.state.favorites
+          .splice(idIndex, 1)]
+      })
+
+      console.log('saiu');
+
+    }
+    console.log(this.state.favorites);
+  }
+
   render() {
-    const { value, input, sortValue } = this.state;
+    const { value, input, sortValue, favorites } = this.state;
     return (
       <div className='mainDiv'>
 
@@ -54,7 +96,10 @@ class App extends React.Component {
         <Pokedex pokemons={pokemons}
           value={value}
           input={input}
-          sortValue={sortValue} />
+          sortValue={sortValue}
+          favoriteClick={this.favoriteClick}
+          favorites={favorites}
+        />
         </section>
 
       </div>

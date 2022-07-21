@@ -1,40 +1,15 @@
 import React from "react";
 import SortPokemons from "./SortPokemons";
+import SelectType from "./SelectType";
+import SearchInput from "./SearchInput";
 
 class Pokeform extends React.Component {
   render() {
-    const {
-      value,
-      handleChange,
-      input,
-      handleClick,
-    } = this.props;
-
     return (
       <form id='pokeform'>
-      
-        {/* Criar componente somente para o input */}
-        <label htmlFor='pokeSearch'>Search pokemon:</label>
-        <div id='searchDiv'>
-          <input typeof='text' placeholder='Type a name or ID' id='searchInput' name='input' value={input} onChange={handleChange}></input>
-        </div>
-
-        {/* Criar componente somente para o select */}
-        <label htmlFor='pokeSelect' id='selectLabel'>
-          Choose Type:
-        </label>
-        <select value={value} onChange={handleChange} id='pokeSelect' name='value'>
-          <option value='All'>All</option>
-          <option value='Electric'>Electric</option>
-          <option value='Fire'>Fire</option>
-          <option value='Bug'>Bug</option>
-          <option value='Poison'>Poison</option>
-          <option value='Psychic'>Psychic</option>
-          <option value='Normal'>Normal</option>
-          <option value='Dragon'>Dragon</option>
-        </select>
-
-        <SortPokemons handleClick={handleClick} />
+        <SearchInput {...this.props} />
+        <SelectType {...this.props} />
+        <SortPokemons {...this.props} />
       </form>
     );
   }
