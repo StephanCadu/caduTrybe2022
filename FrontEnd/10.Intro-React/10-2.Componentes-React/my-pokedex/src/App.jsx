@@ -41,34 +41,29 @@ class App extends React.Component {
   favoriteClick({ target }) {
     if(target.className === 'ballUnselected') {
 
+      console.log('entrou');
+
       target.className = 'ballSelected'
 
       this.setState({
         favorites: [...this.state.favorites,
           target.parentNode.innerText.replace(/#/g, '')],
-      })
-
-      console.log('entrou');
+      }, () => { console.log(this.state.favorites); })
 
     } else {
 
       target.className = 'ballUnselected'
 
-      const idIndex = this.state.favorites
-        .indexOf(target.parentNode.innerText
-        .replace(/#/g, ''));
+      const idToRemove = target.parentNode.innerText
+      .replace(/#/g, '')
       
-      console.log(idIndex);
-
-      this.setState({
-        favorites: [...this.state.favorites
-          .splice(idIndex, 1)]
-      })
-
       console.log('saiu');
-
+      
+      this.setState({
+        favorites: this.state.favorites
+          .filter((id) => id !== idToRemove)
+      }, () => { console.log(this.state.favorites); })
     }
-    console.log(this.state.favorites);
   }
 
   render() {
@@ -78,7 +73,7 @@ class App extends React.Component {
 
         <section id='iconSection' className='flip'>
           <div id='iconDiv'></div>
-          {/* <div id='iconBack'>Show favorite pokemons!</div> */}
+          <span id='hoverSpan'>Show favorite pokemons!</span>
         </section>
 
         <section className='formContainer'>

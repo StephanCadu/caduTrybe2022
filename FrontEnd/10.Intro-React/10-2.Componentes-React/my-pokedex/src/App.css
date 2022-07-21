@@ -35,11 +35,33 @@ body {
   top: -104px;
   transition: .8s;
   /* transform-style: preserve-3d; */
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 #iconDiv:hover {
   transform: rotate(-15deg) scale(.4);
+}
+
+/* span (icon message) */
+#iconSection #hoverSpan {
+  visibility: hidden;
+  background-color: rgb(137, 137, 137);
+  border: 1px solid rgb(32, 32, 32);
+  width: 180px;
+  height: 20px;
+  font-size: .9em;
+  text-align: center;
+  border-radius: 4px;
+  position: absolute;
+  z-index: 1;
+  padding: 1px 0;
+  opacity: 90%;
+}
+
+#iconSection:hover #hoverSpan {
+  visibility: visible;
+  top: 0;
+  margin-left: 6vw;
 }
 
 /* MAIN */
