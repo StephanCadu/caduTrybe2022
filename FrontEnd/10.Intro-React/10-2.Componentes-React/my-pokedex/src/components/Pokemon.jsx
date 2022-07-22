@@ -11,12 +11,13 @@ class Pokemon extends React.Component {
         image,
         id
       },
-      favoriteClick,
+      favoritePokemon,
     } = this.props;
     return (
       <section className='pokeContainer'>
         <div className='idPlace'>
-          <div onClick={favoriteClick} className='ballUnselected'></div>
+          <div onClick={(e) => favoritePokemon(e, id)} className='ballUnselected'>
+          </div>
           {`#${id}`}
         </div>
         <h4 className='h4'>{name}</h4>

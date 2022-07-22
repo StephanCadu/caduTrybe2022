@@ -3,6 +3,7 @@ import Pokedex from './components/Pokedex';
 import pokemons from './data/data';
 import Pokeform from './formComponents/Pokeform';
 import React from 'react';
+import NextPokeButton from './components/NextPokeButton';
 
 class App extends React.Component {
   constructor(props) {
@@ -13,12 +14,16 @@ class App extends React.Component {
       input: '',
       sortValue: '',
       favorites: [],
+      iconClicked: false,
+      counter: 0,
     };
 
     this.handleChange = this.handleChange.bind(this);
     this.handleClick = this.handleClick.bind(this);
-    this.favoriteClick = this.favoriteClick.bind(this);
-    this.getIndex = this.getIndex.bind(this);
+    this.favoritePokemon = this.favoritePokemon.bind(this);
+    this.handleIconClick = this.handleIconClick.bind(this);
+    this.handleNextClick = this.handleNextClick.bind(this);
+    this.handlePreviousClick = this.handlePreviousClick.bind(this);
   }
 
   handleChange({ target: { name, value } }) {  
@@ -32,47 +37,92 @@ class App extends React.Component {
     this.setState({ sortValue: event.target.value, })
   }
 
-  getIndex(parent) {
-    return this.state.favorites
-    .indexOf(parent.innerText
-    .replace(/#/g, ''));
-  }
+  favoritePokemon(e, id) {
+    const { favorites } = this.state;
 
-  favoriteClick({ target }) {
-    if(target.className === 'ballUnselected') {
-
-      console.log('entrou');
-
-      target.className = 'ballSelected'
-
+    if(favorites.includes(id)) {
+      e.target.classList.toggle('ballSelected');
+      e.target.classList.toggle('ballUnselected');
       this.setState({
-        favorites: [...this.state.favorites,
-          target.parentNode.innerText.replace(/#/g, '')],
-      }, () => { console.log(this.state.favorites); })
-
+        favorites: favorites.filter((pokeId) => pokeId !== id)
+      });
     } else {
-
-      target.className = 'ballUnselected'
-
-      const idToRemove = target.parentNode.innerText
-      .replace(/#/g, '')
-      
-      console.log('saiu');
-      
+      e.target.classList.toggle('ballUnselected');
+      e.target.classList.toggle('ballSelected');
       this.setState({
-        favorites: this.state.favorites
-          .filter((id) => id !== idToRemove)
-      }, () => { console.log(this.state.favorites); })
+        favorites: [...favorites, id]
+      });
     }
   }
 
+  handleIconClick() {
+    this.setState({
+      iconClicked: !this.state.iconClicked
+    })
+  }
+
+  handleNextClick() {
+    const {
+      counter,
+      value,
+      iconClicked,
+      favorites,
+    } = this.state;
+
+    let filterLenght;
+    
+    if(iconClicked) {
+      filterLenght = favorites.length;
+    } else {
+      filterLenght = pokemons.filter(({ type }) =>
+        value === 'All' ||
+        type === value).length
+    }
+    
+    this.setState({
+      counter: (counter < filterLenght - 1 ?
+        this.state.counter + 1 : 0 )
+    })
+  }
+
+  handlePreviousClick() {
+    const {
+      counter,
+      value,
+      iconClicked,
+      favorites,
+    } = this.state;
+
+    let filterLenght;
+    
+    if(iconClicked) {
+      filterLenght = favorites.length;
+    } else {
+      filterLenght = pokemons.filter(({ type }) =>
+        value === 'All' ||
+        type === value).length
+    }
+
+    this.setState({
+      counter: (counter > 0 ?
+        this.state.counter - 1 : (filterLenght - 1))
+    })
+  }
+
   render() {
-    const { value, input, sortValue, favorites } = this.state;
+    const {
+      value,
+      input, 
+      sortValue,
+      favorites,
+      iconClicked,
+      counter,
+    } = this.state;
     return (
       <div className='mainDiv'>
 
         <section id='iconSection' className='flip'>
-          <div id='iconDiv'></div>
+          <div id='iconDiv' onClick={this.handleIconClick}></div>
           <span id='hoverSpan'>Show favorite pokemons!</span>
         </section>
 
@@ -87,13 +137,20 @@ class App extends React.Component {
 
         <div className='title'></div>
 
+        <NextPokeButton
+          handleNextClick={this.handleNextClick}
+          handlePreviousClick={this.handlePreviousClick}
+        />
+
         <section className='infoSection'>
         <Pokedex pokemons={pokemons}
           value={value}
           input={input}
           sortValue={sortValue}
-          favoriteClick={this.favoriteClick}
+          favoritePokemon={this.favoritePokemon}
           favorites={favorites}
+          iconClicked={iconClicked}
+          counter={counter}
         />
         </section>
 

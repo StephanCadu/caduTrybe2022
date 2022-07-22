@@ -9,16 +9,23 @@ class Pokedex extends React.Component {
       value,
       input,
       sortValue,
-      favoriteClick,
+      favoritePokemon,
+      iconClicked,
       favorites,
+      counter,
     } = this.props
 
     const myRegex = new RegExp(`${input}.*`, 'g')
 
     return (
       <section className='pokeSection'>
-        {pokemons.filter((bicho) => value === 'All' || bicho.type === value)
-          .filter((bixin) => input === '' || bixin.name.match(myRegex) || bixin.id.toString().match(myRegex))
+
+        {pokemons
+          .filter((bicho) => value === 'All' ||
+            bicho.type === value)
+          .filter((bixin) => input === '' || 
+            bixin.name.match(myRegex) || 
+            bixin.id.toString().match(myRegex))
           .sort((a, b) => {
             switch (sortValue) {
               case 'idUp':
@@ -33,13 +40,14 @@ class Pokedex extends React.Component {
                 return 0;
             }
           })
+          .filter(({ id }) => !iconClicked ||
+            favorites.includes(id))
+          .filter((_, ind) => ind === counter)
           .map((poke) => <Pokemon
             pokemon={poke}
             key={poke.id}
-            favoriteClick={favoriteClick}
+            favoritePokemon={favoritePokemon}
           />)}
-
-          {/* .filter((pkm) => favorites.length < 1 ||favorites.includes(pkm.id)) */}
 
       </section>
     );

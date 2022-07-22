@@ -20,8 +20,6 @@ body {
   transition: .4s;
   left: 5%;
   top: 8%;
-  height: 100px;
-  width: 10px;
 }
 
 /* image */
@@ -45,17 +43,19 @@ body {
 /* span (icon message) */
 #iconSection #hoverSpan {
   visibility: hidden;
-  background-color: rgb(137, 137, 137);
-  border: 1px solid rgb(32, 32, 32);
-  width: 180px;
-  height: 20px;
-  font-size: .9em;
+  background-color: rgb(134, 129, 129);
+  border: 1px solid rgb(5, 5, 5);
+  width: 7.5vw;
+  height: 2.5vh;
+  font-size: .7em;
+  color: white;
   text-align: center;
-  border-radius: 4px;
   position: absolute;
   z-index: 1;
-  padding: 1px 0;
-  opacity: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
 }
 
 #iconSection:hover #hoverSpan {
@@ -78,6 +78,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 60%;
 }
 
 /* POKEDEX SECTION */
@@ -85,7 +86,6 @@ body {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  width: 1250px;
   margin-top: 50px;
 }
 
@@ -211,15 +211,21 @@ body {
 .formContainer {
   position: absolute;
   align-self: flex-end;
-  margin-right: 100px;
-  top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-right: 0%;
+  top: 20vh;
 }
 
 /* FORM */
 #pokeform {
   display: flex;
   flex-direction: column;
-  width: 300px;
+  width: 20%;
+  margin-right: 5%;
   align-items: center;
   font-size: 20px;
   font-family: 'Press Start 2P', cursive;
@@ -455,6 +461,45 @@ body {
   text-shadow: 1px 1px 1px black;
 }
 /* TYPE COLORS ---- end */
+
+
+/* NEXT POKEMON BUTTON */
+
+/* section */
+#nextBtnSection {
+  margin-top: 50px;
+}
+
+/* button */
+#nextPokeBtn {
+  margin: 10px 0;
+  height: 30px;
+  width: 60px;
+  font-size: 1.2em;
+  font-weight: 700;
+  color: rgb(53, 106, 188);
+  margin-top: 10px;
+  background-color: rgb(255, 205, 0);
+  border: 2px solid rgb(255, 205, 0);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: 3px 3px 3px rgb(73, 72, 72);
+}
+
+#previousPokeBtn {
+  margin: 10px 0;
+  height: 30px;
+  width: 60px;
+  font-size: 1.2em;
+  font-weight: 700;
+  color: rgb(255, 205, 0);
+  margin-top: 10px;
+  background-color: rgb(53, 106, 188);
+  border: 2px solid rgb(53, 106, 188);
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  box-shadow: 3px 3px 3px rgb(73, 72, 72);
+}
 
 /* pesquisar: */
 /* 
