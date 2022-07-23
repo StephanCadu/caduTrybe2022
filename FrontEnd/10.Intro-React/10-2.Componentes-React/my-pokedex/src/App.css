@@ -20,6 +20,7 @@ body {
   transition: .4s;
   left: 5%;
   top: 8%;
+
 }
 
 /* image */
@@ -42,10 +43,10 @@ body {
 
 /* span (icon message) */
 #iconSection #hoverSpan {
-  visibility: hidden;
+  visibility: visible;
   background-color: rgb(134, 129, 129);
   border: 1px solid rgb(5, 5, 5);
-  width: 7.5vw;
+  width: 8vw;
   height: 2.5vh;
   font-size: .7em;
   color: white;

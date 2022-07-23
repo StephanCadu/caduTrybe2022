@@ -15,7 +15,7 @@ class Pokedex extends React.Component {
       counter,
     } = this.props
 
-    const myRegex = new RegExp(`${input}.*`, 'g')
+    const myRegex = new RegExp(`${input}.*`, 'i')
 
     return (
       <section className='pokeSection'>
@@ -47,6 +47,7 @@ class Pokedex extends React.Component {
             pokemon={poke}
             key={poke.id}
             favoritePokemon={favoritePokemon}
+            favorites={favorites}
           />)}
 
       </section>

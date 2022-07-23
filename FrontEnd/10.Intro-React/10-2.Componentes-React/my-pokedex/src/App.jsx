@@ -1,7 +1,7 @@
 import './App.css';
 import Pokedex from './components/Pokedex';
 import pokemons from './data/data';
-import Pokeform from './formComponents/Pokeform';
+import Pokeform from './FormComponents/Pokeform';
 import React from 'react';
 import NextPokeButton from './components/NextPokeButton';
 
@@ -17,27 +17,20 @@ class App extends React.Component {
       iconClicked: false,
       counter: 0,
     };
-
-    this.handleChange = this.handleChange.bind(this);
-    this.handleClick = this.handleClick.bind(this);
-    this.favoritePokemon = this.favoritePokemon.bind(this);
-    this.handleIconClick = this.handleIconClick.bind(this);
-    this.handleNextClick = this.handleNextClick.bind(this);
-    this.handlePreviousClick = this.handlePreviousClick.bind(this);
   }
 
-  handleChange({ target: { name, value } }) {  
+  handleChange = ({ target: { name, value } }) => {  
     this.setState({
       [name]: value,
     });
   }
 
-  handleClick(event) {
+  handleClick = (event) => {
     event.preventDefault();
     this.setState({ sortValue: event.target.value, })
   }
 
-  favoritePokemon(e, id) {
+  favoritePokemon = (e, id) => {
     const { favorites } = this.state;
 
     if(favorites.includes(id)) {
@@ -55,13 +48,13 @@ class App extends React.Component {
     }
   }
 
-  handleIconClick() {
+  handleIconClick = () => {
     this.setState({
       iconClicked: !this.state.iconClicked
     })
   }
 
-  handleNextClick() {
+  handleNextClick = () => {
     const {
       counter,
       value,
@@ -75,8 +68,8 @@ class App extends React.Component {
       filterLenght = favorites.length;
     } else {
       filterLenght = pokemons.filter(({ type }) =>
-        value === 'All' ||
-        type === value).length
+      value === 'All' ||
+      type === value).length
     }
     
     this.setState({
@@ -85,7 +78,7 @@ class App extends React.Component {
     })
   }
 
-  handlePreviousClick() {
+  handlePreviousClick = () => {
     const {
       counter,
       value,
@@ -99,8 +92,8 @@ class App extends React.Component {
       filterLenght = favorites.length;
     } else {
       filterLenght = pokemons.filter(({ type }) =>
-        value === 'All' ||
-        type === value).length
+      value === 'All' ||
+      type === value).length
     }
 
     this.setState({

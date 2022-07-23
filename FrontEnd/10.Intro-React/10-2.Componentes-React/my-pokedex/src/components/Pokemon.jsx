@@ -9,14 +9,19 @@ class Pokemon extends React.Component {
         type,
         averageWeight,
         image,
-        id
+        id,
       },
       favoritePokemon,
+      favorites,
     } = this.props;
+
+    let ballClass = favorites.includes(id) ?
+      'ballSelected' : 'ballUnselected';
+
     return (
       <section className='pokeContainer'>
         <div className='idPlace'>
-          <div onClick={(e) => favoritePokemon(e, id)} className='ballUnselected'>
+          <div onClick={(e) => favoritePokemon(e, id)} className={ballClass}>
           </div>
           {`#${id}`}
         </div>
