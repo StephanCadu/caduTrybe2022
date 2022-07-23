@@ -39,6 +39,12 @@ body {
 
 #iconDiv:hover {
   transform: rotate(-15deg) scale(.4);
+  cursor: pointer;
+}
+
+#iconDiv:active {
+  transform: rotate(-15deg) scale(.36);
+  transition: none;
 }
 
 /* span (icon message) */
@@ -231,6 +237,10 @@ body {
   /* mix-blend-mode: multiply; */
 }
 
+.ballUnselected:hover {
+  cursor: pointer;
+}
+
 /* POKEBALL SELECTED */
 .ballSelected {
   background-image: url('./images/pokeBallCorrected.png');
@@ -241,6 +251,10 @@ body {
   left: 0%;
   top: 0%;
   margin-left: 0;
+}
+
+.ballSelected:hover {
+  cursor: pointer;
 }
 
 /* FORM DIV */
@@ -522,6 +536,10 @@ body {
   box-shadow: 3px 3px 3px rgb(73, 72, 72);
 }
 
+#nextPokeBtn:hover {
+  cursor: pointer;
+}
+
 #previousPokeBtn {
   margin: 10px 0;
   height: 30px;
@@ -535,6 +553,10 @@ body {
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
   box-shadow: 3px 3px 3px rgb(73, 72, 72);
+}
+
+#previousPokeBtn:hover {
+  cursor: pointer;
 }
 
 /* pesquisar: */
