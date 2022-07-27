@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-/* vh (height) em css é o tamanho do navegador, 
+/* vh (height) em css é o tamanho do navegador,
 porém pode se considerar que é o tamanho da tela do usuário
 
 vw é o mesmo que vh só que pra width*/
@@ -128,7 +128,7 @@ body {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 /* POKEMONS */
@@ -266,8 +266,15 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin-right: 0%;
+  margin-right: 1%;
   top: 20vh;
+  background: rgba(255, 255, 255, 0.371);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.4px);
+  -webkit-backdrop-filter: blur(5.4px);
+  border: 1px solid rgba(255, 255, 255, 1);
+  height: 60vh
 }
 
 /* FORM */
@@ -359,10 +366,13 @@ body {
 .sortBtn {
   margin: 3px;
   width: 100px;
-  border: 2px solid black;
+  border: 2px solid white;
   border-radius: 20px;
   background-color: white;
   box-shadow: 3px 3px 3px rgb(88, 88, 88);
+  background-color: #000000;
+  font-weight: 700;
+  color: white;
 }
 
 .sortBtn:hover {
@@ -517,7 +527,7 @@ body {
 
 /* section */
 #nextBtnSection {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 /* button */
@@ -528,7 +538,7 @@ body {
   font-size: 1.2em;
   font-weight: 700;
   color: rgb(53, 106, 188);
-  margin-top: 10px;
+  margin-top: 5px;
   background-color: rgb(255, 205, 0);
   border: 2px solid rgb(255, 205, 0);
   border-top-right-radius: 15px;
@@ -559,8 +569,61 @@ body {
   cursor: pointer;
 }
 
+/* DISPLAY MODE */
+
+#displaysSection {
+  position: absolute;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-left: 1%;
+  top: 30vh;
+  height: 200px;
+  width: 300px;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.371);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.4px);
+  -webkit-backdrop-filter: blur(5.4px);
+  border: 1px solid rgba(255, 255, 255, 1);
+  font-family: 'Press Start 2P', cursive;
+  font-size: .8em;
+}
+
+#displays {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.displayNumbers {
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  background-color: #6890F0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  transition: .4s;
+}
+
+.displayNumbers:hover {
+  background-color: #68f0e5;
+  cursor: pointer;
+}
+
+#random {
+  background-image: url('./random-removebg-preview.png');
+  background-size: contain;
+}
+
 /* pesquisar: */
-/* 
+/*
 radial-gradients
 overflow
 z-index

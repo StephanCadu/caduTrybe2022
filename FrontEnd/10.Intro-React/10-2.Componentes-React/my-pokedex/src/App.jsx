@@ -4,22 +4,24 @@ import pokemons from './data/data';
 import Pokeform from './FormComponents/Pokeform';
 import React from 'react';
 import NextPokeButton from './components/NextPokeButton';
+import Displays from './components/Displays';
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     // se multiple for selecionado, value precisa ser um array
-    this.state = { 
-      value: 'All', 
+    this.state = {
+      value: 'All',
       input: '',
       sortValue: '',
       favorites: [],
       iconClicked: false,
       counter: 0,
+      display: '1',
     };
   }
 
-  handleChange = ({ target: { name, value } }) => {  
+  handleChange = ({ target: { name, value } }) => {
     this.setState({
       [name]: value,
     });
@@ -63,7 +65,7 @@ class App extends React.Component {
     } = this.state;
 
     let filterLenght;
-    
+
     if(iconClicked) {
       filterLenght = favorites.length;
     } else {
@@ -71,7 +73,7 @@ class App extends React.Component {
       value === 'All' ||
       type === value).length
     }
-    
+
     this.setState({
       counter: (counter < filterLenght - 1 ?
         this.state.counter + 1 : 0 )
@@ -87,7 +89,7 @@ class App extends React.Component {
     } = this.state;
 
     let filterLenght;
-    
+
     if(iconClicked) {
       filterLenght = favorites.length;
     } else {
@@ -102,14 +104,21 @@ class App extends React.Component {
     })
   }
 
+  handleDisplayClick = (event) => {
+    this.setState({
+      display: event.target.id,
+    });
+  }
+
   render() {
     const {
       value,
-      input, 
+      input,
       sortValue,
       favorites,
       iconClicked,
       counter,
+      display,
     } = this.state;
     return (
       <div className='mainDiv'>
@@ -121,7 +130,7 @@ class App extends React.Component {
 
         <section className='formContainer'>
           <Pokeform value={value}
-            input={input} 
+            input={input}
             handleChange={this.handleChange}
             handleClick={this.handleClick}
             sortValue={sortValue}
@@ -144,8 +153,13 @@ class App extends React.Component {
           favorites={favorites}
           iconClicked={iconClicked}
           counter={counter}
+          display={display}
         />
         </section>
+
+        <Displays
+          handleDisplayClick={ this.handleDisplayClick }
+        />
 
       </div>
     );
