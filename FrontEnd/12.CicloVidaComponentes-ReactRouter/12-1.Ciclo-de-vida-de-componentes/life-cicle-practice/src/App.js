@@ -1,12 +1,17 @@
 import './App.css';
-import Counter from './Counter';
+import { Component } from 'react';
+// import Counter from './Counter';
+// import RickMorty from './RickMorty';
+import DadJoke from './DadJoke';
 
-function App() {
-  return (
-    <div className="App">
-      <Counter />
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <DadJoke />
+      </div>
+    );
+  }
 }
 
 export default App;
