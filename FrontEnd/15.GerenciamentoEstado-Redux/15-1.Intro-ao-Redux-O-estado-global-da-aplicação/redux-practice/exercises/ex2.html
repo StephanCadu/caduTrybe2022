@@ -22,7 +22,7 @@
       }
     </style>
   </head>
-  <body id="body">
+  <body id="body" class="dark">
     <div class="container">
       <h1>Minha Aplicação</h1>
       <p>Status: Você está <span id="status">Offline</span></p>
@@ -77,9 +77,6 @@
 
       store.subscribe(() => {
         const { themeReducer: { theme }, statusReducer: { status } } = store.getState();
-
-        console.log(store.getState())
-        // console.log(status)
 
         const body = document.getElementById('body');
         const statusElement = document.getElementById('status');
