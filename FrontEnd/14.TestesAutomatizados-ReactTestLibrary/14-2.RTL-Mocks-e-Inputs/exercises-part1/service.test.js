@@ -12,4 +12,11 @@ describe('testa funções do arquivo service', () => {
     expect(randomNumber).toHaveBeenCalledTimes(1);
     expect(randomNumber()).toBe(10);
   })
+<<<<<<< HEAD
+
+  it('testa uma nova implementação para a função randomNumber', () => {
+    
+  })
+=======
+>>>>>>> master
 })
