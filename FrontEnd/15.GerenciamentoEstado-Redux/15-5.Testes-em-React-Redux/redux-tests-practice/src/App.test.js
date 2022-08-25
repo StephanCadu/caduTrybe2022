@@ -48,11 +48,11 @@ describe('testing clicks', () => {
   })
 
   it('using a pre seted state, a click should increment the value of clicks', () => {
-    renderWithRedux(<App />, { initialState: { clickReducer: { counter: 10 } } });
+    renderWithRedux(<App />, { initialState: { clickReducer: { counter: 12 } } });
     const button = screen.queryByRole('button');
 
     userEvent.click(button);
-    const clicks = screen.queryByText(/11/i);
+    const clicks = screen.queryByText(/13/i);
 
     expect(clicks).toBeInTheDocument();
   })
