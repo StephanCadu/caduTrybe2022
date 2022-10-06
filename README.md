@@ -69,66 +69,65 @@ Contém todas as atividades desenvolvidas por __[mim](https://www.linkedin.com/i
 - [X] 8.5 - JavaScript ES6 - spread operator, parâmetro rest, destructuring e mais
 - [X] 8.6 - Projeto - Zoo functions
 
-## Desenvolvimento Front-end :hourglass_flowing_sand:
+## Desenvolvimento Front-end :white_check_mark:
 
 ##### Bloco 9: [JavaScript e Testes Assíncronos]()
-- [ ] 9.1 - JavaScript Assíncrono e Callbacks
-- [ ] 9.2 - JavaScript Assíncrono - Fetch API e async/await
-- [ ] 9.3 - Jest - Testes Assíncronos
-- [ ] 9.4 - Projeto - Carrinho de Compras
+- [X] 9.1 - JavaScript Assíncrono e Callbacks
+- [X] 9.2 - JavaScript Assíncrono - Fetch API e async/await
+- [X] 9.3 - Jest - Testes Assíncronos
+- [X] 9.4 - Projeto - Carrinho de Compras
 
 ##### Bloco 10: [Introdução à React]()
-- [ ] 10.1 - Introdução - Front-end
-- [ ] 10.1 - Introdução - React
-- [ ] 10.1 - 'Hello, world!' no React!
-- [ ] 10.2 - Componentes React
-- [ ] 10.3 - Projeto - Sistema Solar
+- [X] 10.1 - Introdução - Front-end
+- [X] 10.1 - Introdução - React
+- [X] 10.1 - 'Hello, world!' no React!
+- [X] 10.2 - Componentes React
+- [X] 10.3 - Projeto - Sistema Solar
 
 ##### Bloco 11: [Componentes com Estado, Eventos e Formulários com React]()
-- [ ] 11.1 - Componentes com estado e eventos
-- [ ] 11.2 - Formulários no React
-- [ ] 11.3 - Projeto - Tryunfo
+- [X] 11.1 - Componentes com estado e eventos
+- [X] 11.2 - Formulários no React
+- [X] 11.3 - Projeto - Tryunfo
 
 ##### Bloco 12: [Ciclo de Vida de Componentes e React Router]()
-- [ ] 12.1 - Ciclo de vida de componentes
-- [ ] 12.2 - React Router
-- [ ] 12.3 - Projeto - TrybeTunes
+- [X] 12.1 - Ciclo de vida de componentes
+- [X] 12.2 - React Router
+- [X] 12.3 - Projeto - TrybeTunes
 
 ##### Bloco 13: [Metodologias Ágeis]()
-- [ ] 13.1 - Metodologias Ágeis
-- [ ] 13.2 - Projeto - Frontend Online Store
+- [X] 13.1 - Metodologias Ágeis
+- [X] 13.2 - Projeto - Frontend Online Store
 
 ##### Bloco 14: [Testes automatizados com React Testing Library]()
-- [ ] 14.1 - RTL - Primeiros passos
-- [ ] 14.2 - RTL - Mocks e Inputs
-- [ ] 14.3 - RTL - Testando React Router
-- [ ] 14.4 - Projeto - Testes em React
+- [X] 14.1 - RTL - Primeiros passos
+- [X] 14.2 - RTL - Mocks e Inputs
+- [X] 14.3 - RTL - Testando React Router
+- [X] 14.4 - Projeto - Testes em React
 
 ##### Bloco 15: [Gerenciamento de estado com Redux]()
-- [ ] 15.1 - Introdução ao Redux - O estado global da aplicação
-- [ ] 15.2 - Usando o Redux no React
-- [ ] 15.3 - Usando o Redux no React - Prática
-- [ ] 15.4 - Usando o Redux no React - Actions Assíncronas
-- [ ] 15.5 - Testes em React-Redux
-- [ ] 15.6 - Projeto - Trybe Wallet
+- [X] 15.1 - Introdução ao Redux - O estado global da aplicação
+- [X] 15.2 - Usando o Redux no React
+- [X] 15.3 - Usando o Redux no React - Prática
+- [X] 15.4 - Usando o Redux no React - Actions Assíncronas
+- [X] 15.5 - Testes em React-Redux
+- [X] 15.6 - Projeto - Trybe Wallet
 
 ##### Bloco 16: Projeto Jogo de Trivia
-- [ ] 16.1 - Projeto - Jogo de Trivia
+- [X] 16.1 - Projeto - Jogo de Trivia
 
 ##### Bloco 17: [Context API e React Hooks]()
-- [ ] 17.1 - Context API do React
-- [ ] 17.2 - React Hooks - useState e useContext
-- [ ] 17.3 - React Hooks - useEffect e Hooks customizados
-- [ ] 17.4 - Projeto - StarWars Datatable com Context API e Hooks
+- [X] 17.1 - Context API do React
+- [X] 17.2 - React Hooks - useState e useContext
+- [X] 17.3 - React Hooks - useEffect e Hooks customizados
+- [X] 17.4 - Projeto - StarWars Datatable com Context API e Hooks
 
 ##### Bloco 18: Projeto App de Receitas
-- [ ] 18.1 - Projeto - App de Receitas
+- [X] 18.1 - Projeto - App de Receitas
 
 ## Desenvolvimento Back-end :hourglass_flowing_sand:
 
 ##### Bloco 19: [Docker: Utilizando Containers]()
-- [ ] 19.1 - Introdução - Back-end
-- [ ] 19.1 - Utilizando Containers - Docker
+- [X] 19.1 - Utilizando Containers - Docker
 - [ ] 19.2 - Manipulação e Criação de Imagens no Docker
 - [ ] 19.3 - Orquestrando Containers com Docker Composer
 - [ ] 19.4 - Projeto - Docker Todo-List
