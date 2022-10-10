@@ -1,4 +1,4 @@
-# os exercícios 3, 4 e 5 também estão aqui
+# os exercícios 3 e 4 também estão aqui
 version: '3'
 services:
   ghost:
