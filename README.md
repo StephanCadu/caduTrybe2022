@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Trybe - Exercícios
 
 Contém todas as atividades desenvolvidas por __[mim](https://www.linkedin.com/in/carlos-eduardo-stephan-851b91233/)__ durante minha tragetória na [Trybe](https://www.betrybe.com/) :rocket:
@@ -253,4 +252,3 @@ Contém todas as atividades desenvolvidas por __[mim](https://www.linkedin.com/i
 - [ ] 38.1 - Nó e Listas Encadeadas
 - [ ] 38.2 - Pilhas e Filas
 - [ ] 38.3 - Projeto - TING - Trybe Is Not Google
-=======
