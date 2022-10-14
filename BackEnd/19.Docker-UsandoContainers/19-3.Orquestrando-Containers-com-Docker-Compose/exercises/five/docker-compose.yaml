@@ -4,4 +4,7 @@ services:
     build: ./frontend
     restart: always
     ports:
-      - 8080:3000
+      - 777:3000
+    # atualiza a aplicação em tempo real
+    volumes:
+      - ./frontend/src:/usr/app
