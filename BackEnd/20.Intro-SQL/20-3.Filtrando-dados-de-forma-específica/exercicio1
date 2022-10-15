@@ -1,3 +1,4 @@
+-- CÓDIGO PARA OS EXERCÍCIOS
 DROP SCHEMA IF EXISTS PecasFornecedores;
 CREATE SCHEMA PecasFornecedores;
 USE PecasFornecedores;
