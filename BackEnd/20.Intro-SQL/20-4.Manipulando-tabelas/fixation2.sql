@@ -29,3 +29,9 @@ SET password = 'FavorResetarSuaSenha123'
 WHERE active = 1
 ORDER BY last_update DESC
 LIMIT 2;
+
+-- sobre --safe-updates (ou --i-am-a-dummy)
+--  -> exige que seja incluída uma KEY para realizar o comando
+--  -> caso não seja colocado LIMIT, usa o padrão de 1000
+--  -> produz erro caso tenha que examinar mais de 1mi de linhas
+--  -> é modificável (ex: SET sql_safe_updates=1, sql_select_limit=500, max_join_size=10000;)
