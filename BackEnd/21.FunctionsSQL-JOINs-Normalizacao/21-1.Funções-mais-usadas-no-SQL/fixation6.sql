@@ -44,3 +44,41 @@ FROM film GROUP BY rating ORDER BY AVG(rental_duration) DESC;
 -- 4
 SELECT district, COUNT(address) AS 'endereços registrados'
 FROM address GROUP BY district ORDER BY COUNT(address) DESC;
+
+-- HAVING (filtra os resultados do GROUP BY)
+
+-- exemplos de uso
+
+-- 1
+SELECT
+    first_name,
+    COUNT(*) AS nomes_cadastrados -- o alias não funciona com strings para o HAVING
+FROM
+    actor
+GROUP BY
+	first_name
+HAVING
+	nomes_cadastrados > 2
+ORDER BY
+	nomes_cadastrados DESC, first_name;
+
+-- 2
+SELECT
+    rating, rental_rate, COUNT(1) AS total
+FROM
+    film
+GROUP BY rental_rate , rating
+HAVING total < 70
+ORDER BY rating , rental_rate;
+
+-- EXERCÍCIOS
+
+-- 1
+SELECT rating, AVG(length) AS duracao_media FROM film
+GROUP BY rating HAVING duracao_media BETWEEN 115.0 AND 121.50
+ORDER BY duracao_media DESC;
+
+-- 2
+SELECT rating, SUM(replacement_cost) AS custo_total FROM film
+GROUP BY rating HAVING custo_total > 3950.50
+ORDER BY custo_total;
