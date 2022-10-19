@@ -118,10 +118,14 @@ DELIMITER $$
 
 CREATE PROCEDURE VerifyIfCustomerIsActive(IN search_email VARCHAR(50), OUT is_active VARCHAR(20))
 BEGIN
-	SELECT IF(active, 'Cliente ativo', 'Cliente inativo') AS customer_status FROM customer WHERE email = search_email;
+	SELECT IF(active, 'Cliente ativo', 'Cliente inativo') AS customer_status FROM customer WHERE email = search_email
+    INTO is_active;
 END $$
 
 DELIMITER ;
 
-CALL VerifyIfCustomerIsActive('SANDRA.MARTIN@sakilacustomer.org', @customer_status);
+SELECT IF(active, 'Cliente ativo', 'Cliente inativo') AS customer_status FROM customer WHERE email = 'SANDRA.MARTIN@sakilacustomer.org';
+
+CALL VerifyIfCustomerIsActive('SANDRA.MARTIN@sakilacustomer.org', @xablau);
+SELECT @xablau AS customer_status;
 CALL VerifyIfCustomerIsActive('BARBARA.JONES@sakilacustomer.org', @customer_stats);
