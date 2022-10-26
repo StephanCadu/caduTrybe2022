@@ -134,23 +134,22 @@ Contém todas as atividades desenvolvidas por __[mim](https://www.linkedin.com/i
 ##### Bloco 20: [Introdução à SQL]()
 - [X] 20.1 - Banco de dados SQL
 - [X] 20.2 - Encontrando dados em um banco de dados
-- [ ] 20.3 - Filtrando dados de forma específica
-- [ ] 20.4 - Manipulando tabelas
-- [ ] 20.5 - Projeto - All For One
+- [X] 20.3 - Filtrando dados de forma específica
+- [X] 20.4 - Manipulando tabelas
+- [X] 20.5 - Projeto - All For One
 
 ##### Bloco 21: [Funções SQL, JOINs e Normalização]()
-- [ ] 21.1 - Funções mais usadas no SQL
-- [ ] 21.2 - Descomplicando JOINs 
-- [ ] 21.3 - Transformando ideias em um modelo de banco de dados
-- [ ] 21.4 - Aula ao vivo + Projeto - One For All
+- [X] 21.1 - Funções mais usadas no SQL
+- [X] 21.2 - Descomplicando JOINs 
+- [X] 21.3 - Transformando ideias em um modelo de banco de dados
+- [X] 21.4 - Aula ao vivo + Projeto - One For All
 
 ##### Bloco 22: [Introdução ao Desenvolvimento Web com Node.js]()
-- [ ] 22.1 - Introdução - Node.js
-- [ ] 22.1 - Node.js - Um motor JavaScript
-- [ ] 22.2 - Node.js - Fluxo Assíncrono
-- [ ] 22.3 - Mocha, Chai e Sinon - Testes de Back-end com Node.js
-- [ ] 22.4 - Express - HTTP com Node.js 
-- [ ] 22.5 - Express - Middlewares
+- [ ] 22.1 - Node.js - Runtime Assíncrono
+- [ ] 22.2 - Node.js - API REST com Express
+- [ ] 22.3 - Node.js - Testes de integração
+- [ ] 22.4 - Node.js - Express e Middlewares
+- [ ] 22.5 - Node.js - Express e MySQL
 - [ ] 22.6 - Atividades + Projeto - Talker Manager
 
 ##### Bloco 23: [Node.js: Camada de Serviço e Arquitetura Rest e Restful]()
