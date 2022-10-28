@@ -75,4 +75,33 @@ describe('Testando a API cacau', function () {
     });
   });
 
+  describe('Usando o método GET em /chocolates/search?name=Mo', function () {
+    it('Retorna chocolates que contém "Mo" em seu nome', async function () {
+      const output = [
+        {
+          "id": 3,
+          "name": "Mon Chéri",
+          "brandId": 2
+        },
+        {
+          "id": 4,
+          "name": "Mounds",
+          "brandId": 3
+        }
+      ];
+      const response = await chai.request(app).get('/chocolates/search?name=Mo');
+      expect(response.status).to.be.equal(200);
+      expect(response.body).to.deep.equal(output);
+    });
+  });
+
+  describe('Usando o método GET em /chocolates/search?name=ZZZ', function () {
+    it('Retorna um array vazio caso não encontre chocolates', async function () {
+      const output = [];
+      const response = await chai.request(app).get('/chocolates/search?name=ZZZ');
+      expect(response.status).to.be.equal(404);
+      expect(response.body).to.deep.equal(output);
+    });
+  });
+
 });

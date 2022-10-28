@@ -3,6 +3,13 @@ const cacau = require('./cacau');
 
 const app = express();
 
+app.get('/chocolates/search', async (req, res) => {
+  const { name } = req.query;
+  const chocolates = await cacau.getChocolatesByName(name);
+  if (!chocolates.length) return res.status(404).json(chocolates);
+  res.status(200).json(chocolates);
+});
+
 app.get('/chocolates/total', async (_req, res) => {
   const total = await cacau.getChocolatesTotal();
   res.status(200).json({ total });
