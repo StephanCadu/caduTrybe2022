@@ -66,4 +66,13 @@ describe('Testando a API cacau', function () {
     });
   });
 
+  describe('Usando o método GET em /chocolates/total', function () {
+    it('Retorna a quantidade de chocolates', async function () {
+      const output = 4;
+      const response = await chai.request(app).get('/chocolates/total');
+      expect(response.status).to.be.equal(200);
+      expect(response.body.total).to.be.equal(output);
+    });
+  });
+
 });

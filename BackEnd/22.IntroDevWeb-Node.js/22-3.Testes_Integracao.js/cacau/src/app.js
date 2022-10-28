@@ -3,10 +3,14 @@ const cacau = require('./cacau');
 
 const app = express();
 
+app.get('/chocolates/total', async (_req, res) => {
+  const total = await cacau.getChocolatesTotal();
+  res.status(200).json({ total });
+});
+
 app.get('/chocolates/:id', async (req, res) => {
   const { id } = req.params;
   const chocolate = await cacau.getChocolateById(+id);
-  console.log('uleeakjddsnkjcdas');
   if(!chocolate) return res.status(404).json({ message: "Chocolate not found" });
   res.status(200).json({ chocolate });
 });
