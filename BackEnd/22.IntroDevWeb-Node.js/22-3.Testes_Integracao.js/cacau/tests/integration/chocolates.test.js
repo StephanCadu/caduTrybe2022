@@ -104,4 +104,25 @@ describe('Testando a API cacau', function () {
     });
   });
 
+  describe('Usando o método PUT em /chocolates/:id', function () {
+    it('Retorna chocolate alterado quando o id é encontrado', async function () {
+      const body = {
+        "name": "Mint Pretty Good",
+        "brandId": 2
+      };
+      const response = await chai.request(app).put('/chocolates/1').send(body);
+      expect(response.status).to.be.equal(200);
+      expect(response.body).to.deep.equal({ ...body, id: 1 });
+    });
+  });
+
+  describe('Usando o método PUT em /chocolates/:id', function () {
+    it('Retorna mensagem "chocolate not found" quando o id não é encontrado', async function () {
+      const output = { message: 'chocolate not found' };
+      const response = await chai.request(app).put('/chocolates/1000');
+      expect(response.status).to.be.equal(404);
+      expect(response.body).to.deep.equal(output);
+    });
+  });
+
 });
