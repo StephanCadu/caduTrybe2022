@@ -1,15 +1,20 @@
-const express = require('express');
 require('express-async-errors');
-const validateTeam = require('./middlewares/validateTeam');
-const existingId = require('./middlewares/existingId');
-const apiCredentials = require('./middlewares/apiCredentials');
 const teams = require('./data/teams.js');
+const express = require('express');
+const morgan = require('morgan');
+const cors = require('cors');
+const {
+  validateTeam,
+  existingId,
+  apiCredentials,
+} = require('./middlewares');
 
 const app = express();
 
-let nextId = 3;
-
+app.use(express.static('./images'));
 app.use(express.json());
+app.use(morgan('dev'));
+app.use(cors());
 
 app.get('/teams', (_req, res) => res.json(teams));
 
@@ -21,6 +26,7 @@ app.get('/teams/:id', existingId, (req, res) => {
   res.status(200).json(team);
 });
 
+let nextId = 3;
 app.post('/teams', validateTeam, (req, res) => {
   const authTeam = req.teams.teams.includes(req.body.sigla);
   const teamExists = teams.some((team) => team.sigla === req.body.sigla);
