@@ -1,12 +1,15 @@
-const connect  = require('./connection');
+const connect = require('./connection');
 
-const insert = (person) => connect.execute(
-  `INSERT INTO people
-    (first_name, last_name, email, phone) VALUES (?, ?, ?, ?)`,
-  [person.firstName, person.lastName, person.email, person.phone]
-);
+const insert = (person) => {
+  console.log(person);
+  return connect.execute(
+    `INSERT INTO people
+      (first_name, last_name, email, phone) VALUES (?, ?, ?, ?)`,
+    [person.firstName, person.lastName, person.email, person.phone]
+  );
+}
 
-const findAll = () => connect.execute('SELECT * FROM people');
+const findAll = () => connect.execute('SELECT * FROM people;');
 
 const findById = (id) => connect.execute('SELECT * FROM people WHERE id = ?', [id]);
 
