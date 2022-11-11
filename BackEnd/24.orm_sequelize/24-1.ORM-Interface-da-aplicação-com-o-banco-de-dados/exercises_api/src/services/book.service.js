@@ -21,7 +21,7 @@ const update = async (id, book) => {
 };
 
 const remove = async (id) => {
-  const bookRemoved = await User.destroy({ where: { id } });
+  const bookRemoved = await Book.destroy({ where: { id } });
   return bookRemoved;
 };
 
