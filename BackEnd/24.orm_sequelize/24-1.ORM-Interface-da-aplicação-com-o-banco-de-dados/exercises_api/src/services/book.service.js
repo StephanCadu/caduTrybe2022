@@ -1,12 +1,22 @@
 const { Book } = require('../db/models');
 
 const getAll = async () => {
-  const books = await Book.findAll();
+  const books = await Book.findAll({
+    order: [[sequelize.literal('title'), 'ASC']]
+  });
   return books;
 };
 
 const getById = async (id) => {
   const book = await Book.findByPk(id);
+  return book;
+};
+
+const getByAuthor = async (author) => {
+  const book = await Book.findOne({
+    where: { author },
+    order: [[sequelize.literal('title'), 'ASC']]
+  });
   return book;
 };
 
@@ -31,4 +41,5 @@ module.exports = {
   create,
   update,
   remove,
+  getByAuthor,
 };
