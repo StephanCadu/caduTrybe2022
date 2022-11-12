@@ -156,7 +156,7 @@ Contém todas as atividades desenvolvidas por __[mim](https://www.linkedin.com/i
 - [X] 23.1 - Arquitetura de Software - Camada de Model
 - [X] 23.2 - Arquitetura de Software - Camada de Service
 - [X] 23.3 - Arquitetura de Software - Camada de Controller
-- [ ] 23.5 - Projeto - Store Manager
+- [X] 23.5 - Projeto - Store Manager
 
 ##### Bloco 24: [Node.js: ORM e Autenticação]()
 - [ ] 24.1 - ORM - Interface da aplicação com o banco de dados
