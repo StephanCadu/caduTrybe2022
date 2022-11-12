@@ -145,38 +145,31 @@ Contém todas as atividades desenvolvidas por __[mim](https://www.linkedin.com/i
 - [X] 21.4 - Aula ao vivo + Projeto - One For All
 
 ##### Bloco 22: [Introdução ao Desenvolvimento Web com Node.js]()
-- [ ] 22.1 - Node.js - Runtime Assíncrono
-- [ ] 22.2 - Node.js - API REST com Express
-- [ ] 22.3 - Node.js - Testes de integração
-- [ ] 22.4 - Node.js - Express e Middlewares
-- [ ] 22.5 - Node.js - Express e MySQL
-- [ ] 22.6 - Atividades + Projeto - Talker Manager
+- [X] 22.1 - Node.js - Runtime Assíncrono
+- [X] 22.2 - Node.js - API REST com Express
+- [X] 22.3 - Node.js - Testes de integração
+- [X] 22.4 - Node.js - Express e Middlewares
+- [X] 22.5 - Node.js - Express e MySQL
+- [X] 22.6 - Atividades + Projeto - Talker Manager
 
-##### Bloco 23: [Node.js: Camada de Serviço e Arquitetura Rest e Restful]()
-- [ ] 23.1 - Introdução - Arquitetura de Software
-- [ ] 23.1 - Arquitetura de Software - Camada de Model
-- [ ] 23.2 - Arquitetura de Software - Camada de Controller e Service
-- [ ] 23.3 - Arquitetura Web - Rest e Restful
-- [ ] 23.4 - Arquitetura de Software - Testando as Camadas
-- [ ] 23.5 - Projeto - Store Manager
+##### Bloco 23: [Arquitetura de Software - Model, Service e Controller]()
+- [X] 23.1 - Arquitetura de Software - Camada de Model
+- [X] 23.2 - Arquitetura de Software - Camada de Service
+- [X] 23.3 - Arquitetura de Software - Camada de Controller
+- [X] 23.5 - Projeto - Store Manager
 
 ##### Bloco 24: [Node.js: ORM e Autenticação]()
-- [ ] 24.1 - Introdução - Node.js: ORM e Autenticação
 - [ ] 24.1 - ORM - Interface da aplicação com o banco de dados
-- [ ] 24.2 - ORM - Associations
-- [ ] 24.3 - JWT - (JSON Web Token)
-- [ ] 24.4 - Testando APIs com Teste de Integração
+- [ ] 24.2 - ORM - Associations 1:1 e 1:N
+- [ ] 24.3 - ORM - Associations N:N e Transactions
+- [ ] 24.4 - JWT - (JSON Web Token)
 - [ ] 24.5 - Projeto - API de Blogs
 
-##### Bloco 25: [Deployment]()
-- [ ] 25.1 - Introdução - Deploy
-- [ ] 25.1 - Infraestrutura - Deploy com Heroku
-- [ ] 25.2 - Deploy Docker & Heroku
-- [ ] 25.3 - Projeto - Stranger Things
+##### Bloco 25: [Masterclass: Deployment]()
+- [ ] 25.1 - Infraestrutura - Deploy com Railway
 
 ##### Bloco 26: [TypeScript]()
 - [ ] 26.1 - Introdução - TypeScript
-- [ ] 26.1 - Introdução ao TypeScript
 - [ ] 26.2 - Tipagem Estática e Generics
 - [ ] 26.3 - Express com TypeScript
 - [ ] 26.4 - Projeto - Trybe Smith
