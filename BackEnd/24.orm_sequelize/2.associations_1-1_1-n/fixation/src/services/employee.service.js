@@ -26,25 +26,47 @@ const getById = async (id) => {
   return employee;
 };
 
+// unmanaged transaction example
+// const insert = async ({ firstName, lastName, age, ...address }) => {
+//   const trans = await sequelize.transaction();
+//   try {
+//     const employee = await Employee.create(
+//       { firstName, lastName, age },
+//       { transaction: trans },
+//     );
+//     await Address.create(
+//       { ...address, employeeId: employee.id },
+//       { transaction: trans },
+//     );
+//     await trans.commit();
+//     return employee;
+//   } catch (e) {
+//     await trans.rollback();
+//     console.error(e);
+//     throw e;
+//   }
+// };
+
+// managed transaction example
 const insert = async ({ firstName, lastName, age, ...address }) => {
   const trans = await sequelize.transaction();
   try {
-    const employee = await Employee.create(
-      { firstName, lastName, age },
-      { transaction: trans },
-    );
-    await Address.create(
-      { ...address, employeeId: employee.id },
-      { transaction: trans },
-    );
-    await trans.commit();
-    return employee;
+    const result = await sequelize.transaction(async (t) => {
+      const employee = await Employee.create(
+        { firstName, lastName, age },
+        { transaction: trans },
+      );
+      await Address.create(
+        { ...address, employeeId: employee.id },
+        { transaction: trans },
+      );
+      return employee;
+    });
+    return result;
   } catch (e) {
-    await trans.rollback();
     console.error(e);
     throw e;
   }
-
 };
 
 module.exports = {
