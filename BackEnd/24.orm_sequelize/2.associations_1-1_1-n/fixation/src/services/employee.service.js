@@ -1,4 +1,10 @@
 const { Address, Employee } = require('../db/models');
+const Sequelize = require('sequelize');
+const config = require('../db/config/config');
+
+const env = process.env.NODE_ENV || 'development';
+
+const sequelize = new Sequelize(config[env]);
 
 const getAll = async () => {
   const employees = await Employee.findAll({
@@ -18,9 +24,31 @@ const getById = async (id) => {
     // }],
   });
   return employee;
-}
+};
+
+const insert = async ({ firstName, lastName, age, ...address }) => {
+  const trans = await sequelize.transaction();
+  try {
+    const employee = await Employee.create(
+      { firstName, lastName, age },
+      { transaction: trans },
+    );
+    await Address.create(
+      { ...address, employeeId: employee.id },
+      { transaction: trans },
+    );
+    await trans.commit();
+    return employee;
+  } catch (e) {
+    await trans.rollback();
+    console.error(e);
+    throw e;
+  }
+
+};
 
 module.exports = {
   getAll,
   getById,
+  insert,
 };
