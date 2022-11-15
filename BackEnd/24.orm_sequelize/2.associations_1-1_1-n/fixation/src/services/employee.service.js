@@ -17,11 +17,11 @@ const getAll = async () => {
 const getById = async (id) => {
   const employee = await Employee.findOne({
     where: { id },
-    // include: [{
-    //   model: Address,
-    //   as: 'addresses',
-    //   attributes: { exclude: ['number'] },
-    // }],
+    include: [{
+      model: Address,
+      as: 'addresses',
+      attributes: { exclude: ['number'] },
+    }],
   });
   return employee;
 };
@@ -49,22 +49,22 @@ const getById = async (id) => {
 
 // managed transaction example
 const insert = async ({ firstName, lastName, age, ...address }) => {
-  const trans = await sequelize.transaction();
+  const t = await sequelize.transaction();
   try {
     const result = await sequelize.transaction(async (t) => {
       const employee = await Employee.create(
         { firstName, lastName, age },
-        { transaction: trans },
+        { transaction: t },
       );
       await Address.create(
         { ...address, employeeId: employee.id },
-        { transaction: trans },
+        { transaction: t },
       );
       return employee;
     });
     return result;
   } catch (e) {
-    console.error(e);
+    // console.error(e);
     throw e;
   }
 };
