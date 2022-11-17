@@ -1,10 +1,10 @@
 {
-  "name": "fixation",
+  "name": "my-library",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "NODE_ENV=test mocha ./tests/**/*$NAME*.test.js --exit",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon src/server.js"
   },
   "keywords": [],
@@ -15,13 +15,7 @@
     "express": "^4.18.2",
     "mysql2": "^2.3.3",
     "nodemon": "^2.0.20",
-    "sequelize": "^6.25.5"
-  },
-  "devDependencies": {
-    "chai": "^4.3.7",
-    "chai-http": "^4.3.0",
-    "mocha": "^10.1.0",
-    "sequelize-cli": "^6.5.2",
-    "sinon": "^14.0.2"
+    "sequelize": "^6.25.6",
+    "sequelize-cli": "^6.5.2"
   }
 }
