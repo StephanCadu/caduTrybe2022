@@ -7,7 +7,7 @@ const { PORT } = process.env;
 
 const controllers = require('./src/controllers');
 const { error, validateLogin } = require('./src/middlewares');
-const validateJWT = require('./auth/validateJWT');
+const { validateJWT, validateAdmin } = require('./auth');
 
 const app = express();
 
@@ -27,6 +27,8 @@ app.get('/ping', controllers.ping);
 app.post('/login', validateLogin, controllers.login);
 
 app.get('/users/me', validateJWT, controllers.user);
+
+app.get('/top-secret', validateJWT, validateAdmin, controllers.secret);
 
 app.use(error);
 
