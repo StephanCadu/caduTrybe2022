@@ -4,6 +4,7 @@ module.exports = (sequelize, _DataTypes) => {
     underscored: true,
     tableName: 'users_books'
   });
+
   UserBook.associate = (models) => {
     models.Book.belongsToMany(models.User, {
       as: 'users',
@@ -18,5 +19,6 @@ module.exports = (sequelize, _DataTypes) => {
       otherKey: 'bookId',
     });
   };
+
   return UserBook;
 };
