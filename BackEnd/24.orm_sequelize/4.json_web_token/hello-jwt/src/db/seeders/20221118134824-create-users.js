@@ -6,11 +6,13 @@ module.exports = {
     await queryInterface.bulkInsert('user', [
       {
         username: 'Monkey D. Luffy',
-        admin: true
+        admin: true,
+        password: 'sanji-niku'
       },
       {
         username: 'Roronoa Zoro',
-        admin: false
+        admin: false,
+        password: 'nihonchu'
       },
     ], {});
   },

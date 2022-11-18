@@ -4,15 +4,15 @@ const userService = require('../services/user');
 const secret = process.env.JWT_SECRET;
 
 module.exports = async (req, res) => {
-  const { username } = req.body;
-  const userExists = await userService.verifyUserExists(username);
+  const { username, password } = req.body;
+  const userExists = await userService.getUserByName(username);
   if (userExists) {
     return res.status(409).json({ error: { message: 'user already exists' } });
   }
 
   const admin = Math.floor(Math.random() * 100) > 60;
 
-  const user = await userService.createUser({ username, admin });
+  const user = await userService.createUser({ username, password, admin });
 
   if (!user) throw new Error
 

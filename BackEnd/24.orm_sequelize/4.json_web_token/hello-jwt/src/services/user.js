@@ -1,16 +1,16 @@
 const { user: User } = require('../db/models');
 
-const verifyUserExists = async (username) => {
+const getUserByName = async (username) => {
   const user = await User.findOne({ where: { username } });
-  return user !== null;
-};
+  return user;
+}
 
-const createUser = async ({ username, admin }) => {
-  const user = await User.create({ username, admin });
+const createUser = async ({ username, password, admin }) => {
+  const user = await User.create({ username, password, admin });
   return user;
 };
 
 module.exports = {
-  verifyUserExists,
   createUser,
+  getUserByName,
 };
