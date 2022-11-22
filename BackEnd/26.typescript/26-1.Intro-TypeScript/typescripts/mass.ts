@@ -29,4 +29,4 @@ const exec = (): void => {
 
 exec();
 
-export default { convert };
+export default exec;

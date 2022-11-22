@@ -27,4 +27,4 @@ const exec = () => {
     console.log(result);
 };
 exec();
-exports.default = { convert };
+exports.default = exec;
