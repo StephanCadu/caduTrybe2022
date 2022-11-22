@@ -16,4 +16,4 @@ const convert = (value, baseUnit, convertUnit) => {
     return `${value}${baseUnit} equivalem a ${newValue}${convertUnit}`;
 };
 console.log(convert(30, 'kl', 'l'));
-exports.default = convert;
+exports.default = { convert };

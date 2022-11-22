@@ -1,3 +1,5 @@
+import readline from 'readline-sync';
+
 enum Symbols {
   'km³' = Math.pow(10, 9),
   'hm³' = Math.pow(10, 6),
@@ -16,6 +18,15 @@ const convert = (value: number, baseUnit: measures, convertUnit: measures): stri
   return `${value}${baseUnit} equivalem a ${newValue}${convertUnit}`;
 };
 
-console.log(convert(30, 'km³', 'm³'));
+const value: number = readline.questionFloat('Insert value to convert: ');
+const baseUnit: string = readline.question('Insert base unit: ');
+const convertUnit: string = readline.question('Insert convert unit: ');
 
-export default convert;
+const exec = (): void => {
+  const result = convert(value, baseUnit as measures, convertUnit as measures);
+  console.log(result);
+};
+
+exec();
+
+export default { convert };

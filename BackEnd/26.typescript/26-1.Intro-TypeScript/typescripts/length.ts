@@ -1,3 +1,5 @@
+import readline from 'readline-sync';
+
 enum Symbols {
   km = 1000,
   hm = 100,
@@ -16,10 +18,15 @@ const convert = (value: number, baseUnit: measures, convertUnit: measures): stri
   return `${value}${baseUnit} equivalem a ${newValue}${convertUnit}`;
 };
 
-console.log(convert(3, 'km', 'm'));
-console.log(convert(555, 'mm', 'km'));
-console.log(convert(12, 'dam', 'cm'));
-console.log(convert(70, 'dm', 'hm'));
+const value: number = readline.questionFloat('Insert value to convert: ');
+const baseUnit: string = readline.question('Insert base unit: ');
+const convertUnit: string = readline.question('Insert convert unit: ');
 
+const exec = (): void => {
+  const result = convert(value, baseUnit as measures, convertUnit as measures);
+  console.log(result);
+};
 
-export default convert;
+exec();
+
+export default { convert };

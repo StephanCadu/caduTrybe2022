@@ -1,5 +1,9 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
+const readline_sync_1 = __importDefault(require("readline-sync"));
 var Symbols;
 (function (Symbols) {
     Symbols[Symbols["km"] = 1000] = "km";
@@ -15,8 +19,12 @@ const convert = (value, baseUnit, convertUnit) => {
     const newValue = (value * Symbols[baseUnit]) / Symbols[convertUnit];
     return `${value}${baseUnit} equivalem a ${newValue}${convertUnit}`;
 };
-console.log(convert(3, 'km', 'm'));
-console.log(convert(555, 'mm', 'km'));
-console.log(convert(12, 'dam', 'cm'));
-console.log(convert(70, 'dm', 'hm'));
-exports.default = convert;
+const value = readline_sync_1.default.questionFloat('Insert value to convert: ');
+const baseUnit = readline_sync_1.default.question('Insert base unit: ');
+const convertUnit = readline_sync_1.default.question('Insert convert unit: ');
+const exec = () => {
+    const result = convert(value, baseUnit, convertUnit);
+    console.log(result);
+};
+exec();
+exports.default = { convert };
