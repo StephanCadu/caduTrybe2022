@@ -20,3 +20,6 @@ console.log(convert(3, 'km', 'm'));
 console.log(convert(555, 'mm', 'km'));
 console.log(convert(12, 'dam', 'cm'));
 console.log(convert(70, 'dm', 'hm'));
+
+
+export default convert;

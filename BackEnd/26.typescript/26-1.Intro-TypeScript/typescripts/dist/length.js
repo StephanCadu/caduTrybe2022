@@ -1,13 +1,5 @@
 "use strict";
-// type Symbols = {
-//   km: number,
-//   hm: number,
-//   dam: number,
-//   m: number,
-//   dm: number,
-//   cm: number,
-//   mm: number,
-// };
+Object.defineProperty(exports, "__esModule", { value: true });
 var Symbols;
 (function (Symbols) {
     Symbols[Symbols["km"] = 1000] = "km";
@@ -27,3 +19,4 @@ console.log(convert(3, 'km', 'm'));
 console.log(convert(555, 'mm', 'km'));
 console.log(convert(12, 'dam', 'cm'));
 console.log(convert(70, 'dm', 'hm'));
+exports.default = convert;
