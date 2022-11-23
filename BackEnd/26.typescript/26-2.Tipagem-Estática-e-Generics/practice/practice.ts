@@ -128,3 +128,37 @@ ${this.origin} at ${this.start} with ${this.passengers} passangers traveling to 
 const voo1 = new Fly(10, 'Jacquin', 'Cortiço', 'Tangamandápio', new Date('1945-12-10'), 'Boeing 274');
 
 console.log(voo1.startFly());
+
+// INTERFACES
+interface Auto {
+  wheels: number;
+  model: string;
+  releaseYear: Date;
+  color: string;
+  type: string;
+  turnOn(): void;
+  turnOff: () => void;
+  speedUp(): void;
+  speedDown: () => void;
+}
+
+interface Feline {
+  specie: string;
+  domestic: boolean;
+  color: string;
+  gender: string;
+  wheight: number;
+  hunt: () => void;
+  eat: () => void;
+  purr: () => void;
+  meow: () => void;
+}
+
+interface Airplane {
+  turbines: number;
+  model: string;
+  size: number;
+  releaseYear: Date;
+  capacity: number;
+  fly(): void;
+}
