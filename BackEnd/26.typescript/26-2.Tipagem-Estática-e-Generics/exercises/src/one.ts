@@ -46,3 +46,5 @@ class Car {
     console.log(`Car turns ${direction}`);
   }
 }
+
+export default Car;
