@@ -1,4 +1,4 @@
-import { Model, INTEGER, STRING, DECIMAL } from 'sequelize';
+import { Model, INTEGER, STRING } from 'sequelize';
 import db from '.';
 
 class Author extends Model {
@@ -21,7 +21,6 @@ Author.init({
   sequelize: db,
   modelName: 'authors',
   timestamps: false,
-  underscored: true,
 });
 
 export default Author;
