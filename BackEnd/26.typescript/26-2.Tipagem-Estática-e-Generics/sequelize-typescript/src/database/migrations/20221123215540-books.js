@@ -12,8 +12,28 @@ module.exports = {
       },
       title: {
         type: Sequelize.STRING,
-
-      }
+        allowNull: false,
+      },
+      authorId: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+        references: {
+          model: 'authors',
+          key: 'id',
+        },
+        onUpdate: 'CASCADE',
+        onDelete: 'CASCADE',
+      },
+      genreId: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+        references: {
+          model: 'genres',
+          key: 'id',
+        },
+        onUpdate: 'CASCADE',
+        onDelete: 'CASCADE',
+      },
     });
   },
 
