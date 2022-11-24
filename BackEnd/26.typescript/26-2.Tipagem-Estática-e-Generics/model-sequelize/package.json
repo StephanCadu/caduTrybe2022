@@ -1,0 +1,18 @@
+{
+  "scripts": {
+    "db:reset": "npx -y tsc && npx sequelize-cli db:drop && npx sequelize-cli db:create && npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all",
+    "test:model": "npx ts-node src/testModel.ts"
+  },
+  "dependencies": {
+    "@types/sequelize": "^4.28.14",
+    "dotenv": "^16.0.3",
+    "sequelize": "^6.25.8",
+    "typescript": "^4.9.3"
+  },
+  "devDependencies": {
+    "@tsconfig/node16": "^1.0.3",
+    "@types/node": "^18.11.9",
+    "mysql2": "^2.3.3",
+    "sequelize-cli": "^6.5.2"
+  }
+}
