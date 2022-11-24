@@ -43,6 +43,6 @@ Book.init({
     timestamps: false,
     // underscored: true,
 });
-Book.belongsTo(Author_1.default, { foreignKey: 'id', as: 'author' });
-Author_1.default.hasMany(Book, { foreignKey: 'authorId', as: 'books' });
+Book.belongsTo(Author_1.default, { foreignKey: 'id' });
+Author_1.default.hasMany(Book, { foreignKey: 'authorId' });
 exports.default = Book;

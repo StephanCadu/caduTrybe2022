@@ -13,8 +13,25 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const Book_1 = __importDefault(require("./database/models/Book"));
-const getBooks = () => __awaiter(void 0, void 0, void 0, function* () {
-    const books = yield Book_1.default.findAll();
-    return books;
-});
-console.table(getBooks());
+const Author_1 = __importDefault(require("./database/models/Author"));
+// (async () => {
+//   const authors = await Author.findAll();
+//   console.table(authors.map((author) => author.toJSON()));
+//   process.exit(0);
+// })();
+// (async () => {
+//   const books = await Book.findAll();
+//   console.table(books.map((book) => book.toJSON()));
+//   process.exit(0);
+// })();
+(() => __awaiter(void 0, void 0, void 0, function* () {
+    const authorsBooks = yield Author_1.default.findAll({
+        include: {
+            model: Book_1.default,
+            attributes: [],
+        },
+        raw: true,
+    });
+    console.log(authorsBooks);
+    process.exit(0);
+}))();
