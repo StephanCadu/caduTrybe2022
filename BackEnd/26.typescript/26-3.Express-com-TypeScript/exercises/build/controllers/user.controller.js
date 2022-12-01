@@ -15,7 +15,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const user_service_1 = __importDefault(require("../services/user.service"));
 const jsonwebtoken_1 = __importDefault(require("jsonwebtoken"));
 const secret = process.env.JWT_SECRET || 'segredo';
-const jwtConfig = { expiresIn: '2d', alg: 'HS256' };
+const jwtConfig = { expiresIn: '2d', algorithm: 'HS256' };
 const getAll = (_req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const users = yield user_service_1.default.getAll();
     res.status(200).json(users);

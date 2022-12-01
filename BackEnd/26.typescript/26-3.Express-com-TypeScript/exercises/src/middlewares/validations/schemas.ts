@@ -7,6 +7,15 @@ const userSchema = Joi.object({
   email: Joi.string().email().required(),
 });
 
+const postSchema = Joi.object({
+  id: Joi.number().integer().min(1),
+  title: Joi.string().min(3).required(),
+  author: Joi.string().min(3).required(),
+  category: Joi.string().min(3).required(),
+  publicationDate: Joi.date().required(),
+});
+
 export default {
   userSchema,
+  postSchema,
 }

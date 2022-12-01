@@ -10,5 +10,6 @@ const routers_1 = require("./routers");
 const app = (0, express_1.default)();
 app.use(express_1.default.json());
 app.use('/users', routers_1.userRouter);
+app.use('/posts', routers_1.blogPostRouter);
 app.use(handleError_1.default);
 exports.default = app;
