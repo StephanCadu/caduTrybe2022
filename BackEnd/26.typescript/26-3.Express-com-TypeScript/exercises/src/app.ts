@@ -1,7 +1,7 @@
 import express from 'express';
 import 'express-async-errors';
 import handleError from './middlewares/handleError';
-import { userRouter, blogPostRouter, productRouter } from './routers'
+import { userRouter, blogPostRouter, productRouter, restaurantRouter } from './routers'
 
 const app = express();
 
@@ -12,6 +12,8 @@ app.use('/users', userRouter);
 app.use('/posts', blogPostRouter);
 
 app.use('/products', productRouter);
+
+app.use('/restaurants', restaurantRouter);
 
 app.use(handleError);
 
