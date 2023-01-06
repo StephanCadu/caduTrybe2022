@@ -87,6 +87,7 @@ class Data {
 
   get year(): number { return this._year }
 
+  // 6
   getMonthName() { return months[this.month - 1] }
 
   isLeapYear(): boolean { return this.year % 4 === 0 && this.year % 100 !== 0 }
@@ -123,3 +124,10 @@ class Data {
     return form.replace('aaaa', year).replace('mm', month).replace('dd', day);
   }
 }
+
+const newData = new Data(60, 60, 5000);
+console.log('1: ', newData.format('dd/mm/aaaa'));
+console.log('2: ', newData.format('aaaa-mm-dd'));
+console.log('3: ', newData.format('dd de M de aa'));
+console.log('4: ', newData.format('dd, M de aaaa'));
+
