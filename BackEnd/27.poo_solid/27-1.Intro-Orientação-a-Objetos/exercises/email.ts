@@ -19,6 +19,8 @@ class Email {
 
   get to(): string { return this._to }
 
+  get subject(): string { return this._subject }
+
   get content(): string { 
     
     return `
