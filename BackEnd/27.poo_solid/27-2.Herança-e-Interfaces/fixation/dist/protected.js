@@ -8,13 +8,11 @@
 //   }
 // }
 // it works because protected modifier allows subclasses having access to superclasses attributes and methods
-class Animal {
-    constructor(birthDate) {
-        this.birthDate = birthDate;
-    } // Protected: classe filha pode ler e escrever, mas acessos externos não
-}
-class Bird extends Animal {
-    showBirthDate() {
-        console.log(this.birthDate); // Okay!
-    }
-}
+// class Animal {
+//   constructor(protected birthDate: Date) { } // Protected: classe filha pode ler e escrever, mas acessos externos não
+// }
+// class Bird extends Animal {
+//   showBirthDate() {
+//     console.log(this.birthDate); // Okay!
+//   }
+// }

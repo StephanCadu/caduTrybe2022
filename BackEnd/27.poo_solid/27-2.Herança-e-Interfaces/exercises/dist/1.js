@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 class Person {
     constructor(name, birth) {
         if (name.length < 3)
@@ -21,6 +22,7 @@ class Person {
     get birthDate() { return this._birthDate; }
     set name(newName) { this._name = newName; }
 }
+exports.default = Person;
 const rightPerson = new Person('Camila', '12/3/2040');
 const wrongPerson = new Person('Ca', '12/3/1850');
 console.log(rightPerson.birthDate);
