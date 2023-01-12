@@ -2,6 +2,6 @@ export interface IVehicle {
   drive(): void
 }
 
-export interface IFlyingVehicle extends IVehicle {
+export interface IFlyingVehicle {
   fly(): void
 }
