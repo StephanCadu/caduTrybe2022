@@ -166,24 +166,24 @@ Contém todas as atividades desenvolvidas por __[mim](https://www.linkedin.com/i
 - [X] 24.5 - Projeto - API de Blogs
 
 ##### Bloco 25: [Masterclass: Deployment]()
-- [ ] 25.1 - Infraestrutura - Deploy com Railway
+- [X] 25.1 - Infraestrutura - Deploy com Railway
 
 ##### Bloco 26: [TypeScript]()
-- [ ] 26.1 - Introdução - TypeScript
-- [ ] 26.2 - Tipagem Estática e Generics
-- [ ] 26.3 - Express com TypeScript
-- [ ] 26.4 - Projeto - Trybe Smith
+- [X] 26.1 - Introdução - TypeScript
+- [X] 26.2 - Tipagem Estática e Generics
+- [X] 26.3 - Express com TypeScript
+- [X] 26.4 - Projeto - Trybe Smith
 
 ##### Bloco 27: [Programação Orientada a Objetos (POO) e SOLID]()
-- [ ] 27.1 - Introdução à Orientação a Objetos
-- [ ] 27.2 - Herança e Interfaces
-- [ ] 27.3 - Polimorfismo
-- [ ] 27.4 - SOLID - Introdução e Princípios S, O e D
-- [ ] 27.5 - SOLID - Princípios L e I
-- [ ] 27.6 - Projeto - Trybers e Dragons
+- [X] 27.1 - Introdução à Orientação a Objetos
+- [X] 27.2 - Herança e Interfaces
+- [X] 27.3 - Polimorfismo
+- [X] 27.4 - SOLID - Introdução e Princípios S, O e D
+- [X] 27.5 - SOLID - Princípios L e I
+- [X] 27.6 - Projeto - Trybers e Dragons
 
 ##### Bloco 28: [Projeto - TFC - Trybe Futebol Clube]()
-- [ ] 28.1 - Projeto - TFC - Trybe Futebol Clube
+- [X] 28.1 - Projeto - TFC - Trybe Futebol Clube
 
 ##### Bloco 29: [Introdução ao MongoDB]()
 - [ ] 29.1 - Introdução - NoSQL
