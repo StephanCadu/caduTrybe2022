@@ -38,22 +38,22 @@
 // db.movies.updateMany({ title: { $in: ['Batman', 'Home Alone'] } }, { $max: { imdbRating: 17 } })
 
 // ex 14
-
+// db.xmen.updateMany({ class: 'unknown' }, { $unset: { class: '' } })
 
 // ex 15
-
+// db.xmen.updateMany({}, { $rename: { name: 'hero_name', 'true_name': 'full_name' }, $set: { power: 100 } })
 
 // ex 16
-
+// db.xmen.updateMany({ class: { $in: ['omega', 'gama'] } }, { $max: { power: 500 } })
 
 // ex 17
-
+// db.xmen.updateMany({ class: 'gama' }, { $min: { power: 300 } })
 
 // ex 18
-
+// db.xmen.updateMany({ class: { $exists: false } }, { $inc: { power: -100 } })
 
 // ex 19
-
+// db.xmen.updateMany({ $or: [{ occupation: 'Senior Staff', power: { $gt: 100 } }, { occupation: 'Junior Staff', power: { $gt: 200 } }] }, { $set: { areas: ['Students Room'] } })
 
 // ex 20
-
+// db.xmen.updateMany({ occupation: 'Junior Staff', areas: { $exists: false } }, { $set: { areas: ['Outside'] } })
