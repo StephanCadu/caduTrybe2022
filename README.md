@@ -186,25 +186,20 @@ Contém todas as atividades desenvolvidas por __[mim](https://www.linkedin.com/i
 - [X] 28.1 - Projeto - TFC - Trybe Futebol Clube
 
 ##### Bloco 29: [Introdução ao MongoDB]()
-- [ ] 29.1 - Introdução - NoSQL
-- [ ] 29.1 - MongoDB - Introdução
-- [ ] 29.2 - Filter Operators
-- [ ] 29.3 - Operadores de Consulta
-- [ ] 29.4 - Updates Simples
-- [ ] 29.5 - Updates Complexos - Arrays
-- [ ] 29.6 - Projeto - Commerce
+- [X] 29.1 - MongoDB - Introdução
+- [X] 29.2 - Filter Operators
+- [X] 29.3 - Operadores de Consulta
+- [X] 29.4 - Updates Simples
+- [X] 29.5 - Updates Complexos - Arrays
+- [X] 29.6 - Projeto - Commerce
 
 ##### Bloco 30: [MongoDB com Node.js e POO]()
-- [ ] 30.1 - MongoDB e Arquitetura MSC
-- [ ] 30.2 - MongoDB e POO
-- [ ] 30.3 - Projeto - Car Shop
+- [X] 30.1 - MongoDB e Arquitetura MSC
+- [X] 30.2 - MongoDB e POO
+- [X] 30.3 - Projeto - Car Shop
 
 ##### Bloco 31: Projeto - App de Delivery 
 - [ ] 31.1 - Projeto - App de Delivery 
-
-##### Bloco 32: [MasterClass - VPS, CI/CD]()
-- [ ] 32.1 - Dia 1
-- [ ] 32.2 - Dia 2
 
 ## Ciência da Computação :hourglass_flowing_sand:
 
