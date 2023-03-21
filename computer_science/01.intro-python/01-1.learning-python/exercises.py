@@ -73,3 +73,52 @@ print(eh_triangulo(1, 2, 3))
 print(eh_triangulo(60, 60, 60))
 print(eh_triangulo(45, 45, 90))
 print(eh_triangulo(40, 60, 80))
+
+
+def retorna_menor(n1, n2):
+    """Exercício Bônus 1"""
+    if n1 < n2:
+        return n1
+    else:
+        return n2
+
+
+print(retorna_menor(1, 2))
+
+
+def imprime_asteriscos2(num):
+    """Exercício Bônus 2"""
+    for index in range(num):
+        print((index + 1) * "*")
+
+
+imprime_asteriscos2(5)
+
+
+def soma_todos(num):
+    """Exercício Bônus 3"""
+    counter = 0
+    for index in range(num):
+        counter += index + 1
+    print(counter)
+
+
+soma_todos(5)
+
+
+def preco_combustivel(litros, tipo):
+    if tipo == "A":
+        preco = 1.9
+        desconto = 0.03
+        if litros > 20:
+            desconto = 0.05
+    if tipo == "G":
+        preco = 2.5
+        desconto = 0.04
+        if litros > 20:
+            desconto = 0.06
+    return (litros * preco) * (1 - desconto)
+
+
+print(preco_combustivel(30, "A"))
+print(preco_combustivel(50, "G"))
