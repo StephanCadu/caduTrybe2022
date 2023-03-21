@@ -199,7 +199,7 @@ Contém todas as atividades desenvolvidas por __[mim](https://www.linkedin.com/i
 - [X] 30.3 - Projeto - Car Shop
 
 ##### Bloco 31: Projeto - App de Delivery 
-- [ ] 31.1 - Projeto - App de Delivery 
+- [X] 31.1 - Projeto - App de Delivery 
 
 ## Ciência da Computação :hourglass_flowing_sand:
 
