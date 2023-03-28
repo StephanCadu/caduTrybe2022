@@ -216,9 +216,9 @@ Contém todas as atividades desenvolvidas por __[mim](https://www.linkedin.com/i
 - [ ] 34.4 - Projeto - Relatórios de Estoque
 
 ##### Bloco 35: [Redes e Raspagem de Dados]()
-- [ ] 35.1 - Arquitetura de Redes
-- [ ] 35.2 - Redes de Computadores, ferramentas e segurança
-- [ ] 35.3 - Raspagem de Dados
+- [ ] 35.1 - Raspagem de Dados
+- [ ] 35.2 - Outras Ferramentas de Raspagem de Dados
+- [ ] 35.3 - Dia de Atividades - Crawlers + POO
 - [ ] 35.4 - Projeto - Tech News
 
 ##### Bloco 36: [Algoritmos]()
@@ -227,14 +227,16 @@ Contém todas as atividades desenvolvidas por __[mim](https://www.linkedin.com/i
 - [ ] 36.3 - Algoritmos de ordenação e busca
 - [ ] 36.4 - Projeto - Algoritmos
 
-##### Bloco 37: [Estrutura de Dados I: Arrays, Hashmaps e Sets]()
+##### Bloco 37: [Estrutura de Dados I: Arrays, Listas, Filas e Pilhas]()
 - [ ] 37.1 - Arquitetura de Computadores
-- [ ] 37.2 - Arrays
-- [ ] 37.3 - Hashmap e Dict
-- [ ] 37.4 - Set
-- [ ] 37.5 - Projeto - Restaurant Order
+- [ ] 37.2 - Arquitetura de Redes
+- [ ] 37.3 - Arrays
+- [ ] 37.4 - Nó e Listas Encadeadas
+- [ ] 37.5 - Filas e Pilhas
+- [ ] 37.6 - Projeto - TING - Trybe Is Not Google
 
-##### Bloco 38: [Estrutura de Dados II: Pilhas, Filas e Listas]()
-- [ ] 38.1 - Nó e Listas Encadeadas
-- [ ] 38.2 - Pilhas e Filas
-- [ ] 38.3 - Projeto - TING - Trybe Is Not Google
+##### Bloco 38: [Estrutura de Dados II: Hashmaps e Sets]()
+- [ ] 38.1 - Hashmap e Dict
+- [ ] 38.2 - Set
+- [ ] 38.3 - Pandas
+- [ ] 38.4 - Projeto - Restaurant Orders
