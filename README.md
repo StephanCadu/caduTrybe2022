@@ -203,12 +203,11 @@ Contém todas as atividades desenvolvidas por __[mim](https://www.linkedin.com/i
 
 ## Ciência da Computação :hourglass_flowing_sand:
 
-##### Bloco 33: [Arquitetura de Computadores e Redes]()
-- [ ] 33.1 - Introdução - Ciência da Computação
-- [ ] 33.1 - Aprendendo Python
-- [ ] 33.2 - Entrada e Saída de Dados
-- [ ] 33.3 - Testes
-- [ ] 33.4 - Projeto - Job Insights
+##### Bloco 33: [Introdução a Python]()
+- [X] 33.1 - Aprendendo Python
+- [X] 33.2 - Entrada e Saída de Dados
+- [X] 33.3 - Testes
+- [X] 33.4 - Projeto - Job Insights
 
 ##### Bloco 34: [Padrões de projeto]()
 - [ ] 34.1 - P.O.O em Python
