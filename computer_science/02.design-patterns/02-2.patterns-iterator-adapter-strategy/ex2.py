@@ -42,7 +42,7 @@ class BaralhoIteravel(Iterable):
     def __iter__(self):
         return IteradorBaralho(self._cartas)
 
-    def __str__(self) -> str:
+    def __str__(self):
         return f"{[carta for carta in self]}"
 
 
