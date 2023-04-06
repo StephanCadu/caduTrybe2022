@@ -212,8 +212,8 @@ Contém todas as atividades desenvolvidas por __[mim](https://www.linkedin.com/i
 ##### Bloco 34: [Padrões de projeto]()
 - [X] 34.1 - P.O.O em Python
 - [X] 34.2 - Padrões - Iterator, Adapter, Strategy
-- [ ] 34.3 - Padrões - Decorator, Observer, Factory
-- [ ] 34.4 - Projeto - Relatórios de Estoque
+- [X] 34.3 - Padrões - Decorator, Observer, Factory
+- [X] 34.4 - Projeto - Relatórios de Estoque
 
 ##### Bloco 35: [Redes e Raspagem de Dados]()
 - [ ] 35.1 - Raspagem de Dados
