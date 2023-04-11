@@ -18,8 +18,6 @@ price = selector.css(".price_color::text").re_first(regex)
 description = selector.css(".sub-header + p::text").get()
 
 suffix = "...more"
-
-print(description.endswith(suffix))
 if description.endswith(suffix):
     description = description[: -len(suffix)]
 
