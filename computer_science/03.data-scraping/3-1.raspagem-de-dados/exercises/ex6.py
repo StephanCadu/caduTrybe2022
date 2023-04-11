@@ -5,6 +5,11 @@ client = MongoClient()
 
 db = client.library
 
+category = input("Digite a categoria escolhida: ")
 
-for book in db.books.find():
-    print(book["title"])
+print(db.books.find_one())
+
+with MongoClient() as client:
+    db = client.library
+    for book in db.books.find({"categories": category}):
+        print(book["title"])
