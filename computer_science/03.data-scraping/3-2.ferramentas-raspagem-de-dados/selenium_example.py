@@ -1,25 +1,31 @@
-# importação do webdriver, que é o que possibilita a implementação para todos
-# os principais navegadores da web
+# # importação do webdriver, que é o que possibilita a implementação para todos
+# # os principais navegadores da web
+# # from time import sleep
+# from selenium import webdriver
+
+# # criação de uma instância de navegador utilizando o Firefox
+# firefox = webdriver.Firefox()
+
+# # requisições para essa instância criada utilizando o método `get`
+# response = firefox.get("https://www.python.org/")
+
+################
+
 from selenium import webdriver
-from time import sleep
 
-# Para usar o chrome ao invés do firefox trocamos
-# FirefoxOptions por ChromeOptions
-# Todavia, caso esteja utilizando o docker, atente-se
-# ao container sendo utilizado.
-options = webdriver.FirefoxOptions()
-options.add_argument("--ignore-certificate-errors")
-options.add_argument("--ignore-ssl-errors=yes")
-options.add_argument("--start-maximized")
+# Importa teclas comuns
+from selenium.webdriver.common.keys import Keys
 
-firefox = webdriver.Remote(
-    command_executor="http://localhost:4444/wd/hub", options=options
-)
+firefox = webdriver.Firefox()
 
-# requisições para essa instância criada utilizando o método `get`
-response = firefox.get("https://www.python.org/")
+response = firefox.get("https://www.google.com.br/")
 
-# espera 10 segundos
-sleep(10)
-# encerra o navegador, importante quando usamos containers
-firefox.quit()
+# pesquisa na instância aberta do navegador pela primeira ocorrência
+# do nome 'q'
+search_input = firefox.find_element("name", "q")
+
+# escreve selenium dentro do campo de pesquisa
+search_input.send_keys("selenium")
+
+# pressiona enter para realizar a busca
+search_input.send_keys(Keys.ENTER)
