@@ -216,10 +216,10 @@ Contém todas as atividades desenvolvidas por __[mim](https://www.linkedin.com/i
 - [X] 34.4 - Projeto - Relatórios de Estoque
 
 ##### Bloco 35: [Redes e Raspagem de Dados]()
-- [ ] 35.1 - Raspagem de Dados
-- [ ] 35.2 - Outras Ferramentas de Raspagem de Dados
-- [ ] 35.3 - Dia de Atividades - Crawlers + POO
-- [ ] 35.4 - Projeto - Tech News
+- [X] 35.1 - Raspagem de Dados
+- [X] 35.2 - Outras Ferramentas de Raspagem de Dados
+- [X] 35.3 - Dia de Atividades - Crawlers + POO
+- [X] 35.4 - Projeto - Tech News
 
 ##### Bloco 36: [Algoritmos]()
 - [ ] 36.1 - Complexidade de Algoritmos
