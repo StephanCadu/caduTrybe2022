@@ -10,6 +10,13 @@ def shuffle(cards):
 
     return shuffled
 
+    # solução usando o tamanho da metade como step e index como offset:
+    # middle = len(cards) // 2
+    # shuffled = []
+    # for offset in range(middle):
+    #     shuffled.extend(cards[offset::middle])
+    # return shuffled
+
 
 print(shuffle([2, 6, 4, 5]))
 print(shuffle([1, 4, 4, 7, 6, 6]))
