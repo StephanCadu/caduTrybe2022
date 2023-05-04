@@ -118,7 +118,7 @@ class LinkedList:
             cur_value = cur_value.next
             index += 1
 
-        return None
+        return -1
 
 
 # Para testar, apenas rode o arquivo com: `python3 linked_list_content.py` :)
