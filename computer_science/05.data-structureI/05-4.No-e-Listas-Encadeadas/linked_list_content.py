@@ -108,6 +108,18 @@ class LinkedList:
 
         return Node(cur_value.value)
 
+    def index_of(self, value):
+        index = 0
+        cur_value = self.head_value
+        while cur_value:
+            if cur_value.value == value:
+                return index
+
+            cur_value = cur_value.next
+            index += 1
+
+        return None
+
 
 # Para testar, apenas rode o arquivo com: `python3 linked_list_content.py` :)
 if __name__ == "__main__":
@@ -141,6 +153,7 @@ if __name__ == "__main__":
     linked_list.insert_at(9, 4)
     print(linked_list.get_element_at(3))
     print(linked_list.get_node_at(3))
+    print(linked_list.index_of(8))
 
     linked_list.clear()
     print(linked_list.is_empty())
