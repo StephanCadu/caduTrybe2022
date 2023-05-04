@@ -96,6 +96,21 @@ class LinkedList:
     def is_empty(self):
         return not self.__length
 
+    def clear(self):
+        self.head_value = None
+        self.__length = 0
+
+    def get_node_at(self, index):
+        if index < 0 or self.__length <= index or self.is_empty():
+            return None
+
+        cur_value = self.head_value
+        while index > 0:
+            cur_value = cur_value.next
+            index -= 1
+
+        return Node(cur_value.value)
+
 
 # Para testar, apenas rode o arquivo com: `python3 linked_list_content.py` :)
 if __name__ == "__main__":
@@ -128,3 +143,8 @@ if __name__ == "__main__":
     linked_list.insert_at(8, 3)
     linked_list.insert_at(9, 4)
     print(linked_list.get_element_at(3))
+    print(linked_list.get_node_at(3))
+
+    linked_list.clear()
+    print(linked_list.is_empty())
+    print(linked_list)
