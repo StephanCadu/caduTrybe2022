@@ -158,3 +158,15 @@ if __name__ == "__main__":
     linked_list.clear()
     print(linked_list.is_empty())
     print(linked_list)
+
+
+# exercise bônus 1:
+def delete_duplicates(link_list: LinkedList):
+    new_list = LinkedList()
+
+    while link_list:
+        cur_node = link_list.remove_first()
+        if new_list.index_of(cur_node.value) == -1:
+            new_list.insert_last(cur_node.value)
+
+    return new_list
