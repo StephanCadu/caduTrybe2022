@@ -20,3 +20,9 @@ class Stack:
         value = self._data[-1]
         del self._data[-1]
         return value
+
+    def peek(self):
+        if self.is_empty():
+            return None
+        value = self._data[-1]
+        return value
