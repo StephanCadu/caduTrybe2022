@@ -222,21 +222,21 @@ Contém todas as atividades desenvolvidas por __[mim](https://www.linkedin.com/i
 - [X] 35.4 - Projeto - Tech News
 
 ##### Bloco 36: [Algoritmos]()
-- [ ] 36.1 - Complexidade de Algoritmos
-- [ ] 36.2 - Recursividade e Estratégias para solução de problemas
-- [ ] 36.3 - Algoritmos de ordenação e busca
-- [ ] 36.4 - Projeto - Algoritmos
+- [X] 36.1 - Complexidade de Algoritmos
+- [X] 36.2 - Recursividade e Estratégias para solução de problemas
+- [X] 36.3 - Algoritmos de ordenação e busca
+- [X] 36.4 - Projeto - Algoritmos
 
 ##### Bloco 37: [Estrutura de Dados I: Arrays, Listas, Filas e Pilhas]()
-- [ ] 37.1 - Arquitetura de Computadores
-- [ ] 37.2 - Arquitetura de Redes
-- [ ] 37.3 - Arrays
-- [ ] 37.4 - Nó e Listas Encadeadas
-- [ ] 37.5 - Filas e Pilhas
-- [ ] 37.6 - Projeto - TING - Trybe Is Not Google
+- [X] 37.1 - Arquitetura de Computadores
+- [X] 37.2 - Arquitetura de Redes
+- [X] 37.3 - Arrays
+- [X] 37.4 - Nó e Listas Encadeadas
+- [X] 37.5 - Filas e Pilhas
+- [X] 37.6 - Projeto - TING - Trybe Is Not Google
 
 ##### Bloco 38: [Estrutura de Dados II: Hashmaps e Sets]()
-- [ ] 38.1 - Hashmap e Dict
+- [X] 38.1 - Hashmap e Dict
 - [ ] 38.2 - Set
 - [ ] 38.3 - Pandas
 - [ ] 38.4 - Projeto - Restaurant Orders
