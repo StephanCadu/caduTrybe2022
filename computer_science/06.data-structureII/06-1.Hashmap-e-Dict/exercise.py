@@ -17,7 +17,7 @@ def count_score(employees, num, memo={}):
 
     for employee in employees[num]:
         memo[num] += count_score(employees, employee, memo)
-   
+
     return memo[num]
 
 
