@@ -17,4 +17,11 @@ df["media"] = (df["primeira_nota"] + df["segunda_nota"]) / 2
 
 df["situacao"] = df["media"].apply(calc_situation)
 
-print(df)
+# print(df)
+
+print(df.shape)
+print(df.columns)
+print(df.describe())
+print(df.info())
+print(df.head(6))
+print(df.tail(7))
