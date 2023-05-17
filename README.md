@@ -201,7 +201,7 @@ Contém todas as atividades desenvolvidas por __[mim](https://www.linkedin.com/i
 ##### Bloco 31: Projeto - App de Delivery 
 - [X] 31.1 - Projeto - App de Delivery 
 
-## Ciência da Computação :hourglass_flowing_sand:
+## Ciência da Computação :white_check_mark:
 
 ##### Bloco 33: [Introdução a Python]()
 - [X] 33.1 - Aprendendo Python
@@ -237,6 +237,6 @@ Contém todas as atividades desenvolvidas por __[mim](https://www.linkedin.com/i
 
 ##### Bloco 38: [Estrutura de Dados II: Hashmaps e Sets]()
 - [X] 38.1 - Hashmap e Dict
-- [ ] 38.2 - Set
-- [ ] 38.3 - Pandas
-- [ ] 38.4 - Projeto - Restaurant Orders
+- [X] 38.2 - Set
+- [X] 38.3 - Pandas
+- [X] 38.4 - Projeto - Restaurant Orders
