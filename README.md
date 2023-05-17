@@ -7,8 +7,8 @@ Contém todas as atividades desenvolvidas por __[mim](https://www.linkedin.com/i
 ## Fundamentos do Desenvolvimento Web :white_check_mark:
 
 ##### Bloco 1: [Unix, Bash e Shell Script]()
-- [X] 1.3 - Fundamentos do Desenvolvimento Web
-- [X] 1.3 - Introdução - Unix & Shell
+- [X] 1.1 - Fundamentos do Desenvolvimento Web
+- [X] 1.2 - Introdução - Unix & Shell
 - [X] 1.3 - Unix & Bash - Parte 1
 - [X] 1.4 - Unix & Bash - Parte 2
 
